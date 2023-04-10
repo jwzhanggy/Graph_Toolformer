@@ -4,7 +4,7 @@
 
 ### Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT
 
-Paper URL: https://github.com/jwzhanggy/Graph_Toolformer/blob/main/figures/view.pdf
+Paper URL: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
 ### References
 
