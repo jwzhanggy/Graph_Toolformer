@@ -1,4 +1,4 @@
-# Graph_Toolformer
+# Graph-Toolformer
 
 ![framework](./figures/framework.png)
 
