@@ -7,7 +7,7 @@
 Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
 ### References 
-(also \usepackage{hyperref} into your paper for adding the url address)
+(also \usepackage{hyperref} into your paper for adding the url address in the reference)
 
 ```
 @article{zhang2023graph,
