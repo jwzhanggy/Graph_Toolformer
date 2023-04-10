@@ -21,6 +21,8 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
 ************************************************************************************************
 
+By adding the needed dataset, the model can run by calling "python gtoolformer_gptj_script.py".
+
 ## Organization of the code?
 
 A simpler template of the code is also available at http://www.ifmlab.org/files/template/IFM_Lab_Program_Template_Python3.zip
