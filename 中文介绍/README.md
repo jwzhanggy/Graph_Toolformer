@@ -1,5 +1,7 @@
 ![paper title!](title.png)
 
+（欢迎转载）
+
 ## 论文标题
 #### Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT
 
