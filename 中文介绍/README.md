@@ -4,8 +4,8 @@
 #### Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT
 
 ## 论文和源码下载链接
-#### http://www.ifmlab.org/files/paper/graph_toolformer.pdf
-#### https://github.com/jwzhanggy/Graph_Toolformer
+#### 文章： http://www.ifmlab.org/files/paper/graph_toolformer.pdf
+#### 代码： https://github.com/jwzhanggy/Graph_Toolformer
 
 ## 背景介绍
 最近几年，大语言模型（LLM）在自然语言处理的各类任务上都取得了非常优异的表现。并且，自从2022年底到现在，ChatGPT 和 New Bing Chat 相继出现以后，各种大语言模型被广泛应用到人们的学习、工作和生活当中，对我们的工作生活都产生了巨大的影响。
