@@ -23,8 +23,8 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
 ## Tasks to be done
 
-- [ ] Add and test more LLMs
 - [ ] Include other graph datasets
+- [ ] Add and test more LLMs
 - [ ] Add pre-trained graph models
 - [ ] Implement the CLI with GUI panel
 - [ ] Release web access and service
