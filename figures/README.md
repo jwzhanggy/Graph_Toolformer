@@ -10,6 +10,6 @@ Technically, to build Graph-ToolFormer, we propose to handcraft both the instruc
 
 # Submission Records to Arxiv
 
-![submission1](Screen\ Shot\ 2023-04-11\ at\ 6.12.08\ PM.png)
+![submission1](Screen%20Shot%202023-04-11%20at%206.12.19%20PM.png)
 
-![submission2](./Screen Shot 2023-04-11 at 6.12.19 PM.png)
+![submission2](Screen%20Shot%202023-04-11%20at%206.12.19%20PM.png)
