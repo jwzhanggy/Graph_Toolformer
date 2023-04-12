@@ -19,7 +19,9 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 }
 ```
 
-### Tasks to be done
+************************************************************************************************
+
+## Tasks to be done
 
 - [ ] Add and test more LLMs
 - [ ] Include other graph datasets
