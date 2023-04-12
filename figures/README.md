@@ -12,4 +12,4 @@ Technically, to build Graph-ToolFormer, we propose to handcraft both the instruc
 
 ![submission1](Screen\ Shot\ 2023-04-11\ at\ 6.12.08\ PM.png)
 
-![submission2](Screen Shot 2023-04-11 at 6.12.19 PM.png)
+![submission2](./Screen Shot 2023-04-11 at 6.12.19 PM.png)
