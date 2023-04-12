@@ -10,6 +10,6 @@ Technically, to build Graph-ToolFormer, we propose to handcraft both the instruc
 
 # Submission Records to Arxiv (Screenshot at April 11)
 
-![submission1](Screen%20Shot%202023-04-11%20at%206.12.19%20PM.png)
+![submission1](Screen%20Shot%202023-04-11%20at%206.12.08%20PM.png)
 
 ![submission2](Screen%20Shot%202023-04-11%20at%206.12.19%20PM.png)
