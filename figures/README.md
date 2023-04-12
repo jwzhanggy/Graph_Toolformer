@@ -8,7 +8,7 @@ To address such challenges, in this paper, we will investigate the principles, m
 
 Technically, to build Graph-ToolFormer, we propose to handcraft both the instruction and a small-sized of prompt templates for each of the graph reasoning tasks, respectively. Via in-context learning, based on such instructions and prompt template examples, we adopt ChatGPT to annotate and augment a larger graph reasoning statement dataset with the most appropriate calls of external API functions. Such augmented prompt datasets will be post-processed with selective filtering and used for fine-tuning existing pre-trained causal LLMs, such as the GPT-J, to teach them how to use graph reasoning tools in the output generation. To demonstrate the effectiveness of Graph-ToolFormer, we conduct some preliminary experimental studies on various graph reasoning datasets and tasks, and will launch a LLM demo online with various graph reasoning abilities.
 
-# Submission Records to Arxiv
+# Submission Records to Arxiv (Screenshot at April 11)
 
 ![submission1](Screen%20Shot%202023-04-11%20at%206.12.19%20PM.png)
 
