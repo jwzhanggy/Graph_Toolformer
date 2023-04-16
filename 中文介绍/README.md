@@ -51,7 +51,7 @@
 
 1. **基于 ChatGPT 对 prompt 进行 augmentation:** 基于上一步的少量 API call prompt 样本，我们提出使用 ChatGPT 对训练数据进行增强。基于人工设计的 instruction 和少量 prompt example 数据，我们调用 ChatGPT API 利用 GPT3.5/GPT4 的 in-context learning 和 few-shot learning 的特性，成功对各类 graph reasoning 任务各自生成了一个比较大的训练数据，并对生成的数据进行了清洗和整理。
 
-2. **使用现有 pre-train LLM 进行模型 fine-tuning:** 基于得到的训练数据，我们对现有 pre-train 的开源 causalLM 模型 （例如 GPT-J 6B 和 LLaMA 7B）进行 fine-tuning。为了降低模型训练的内存开销，本位使用了最新的 LoRA，大预言模型 quantization 技术，并且使用了 bitsandbyte 的 8bit AdamW 作为训练使用的 optimizer。本文模型的 fine-tuning 任务，在使用小的 batch-size 的情况下，最低仅仅需要 11GB 显存，完全可以在 1080Ti 的显卡上跑 fine-tuning。
+2. **使用现有 pre-train LLM 进行模型 fine-tuning:** 基于得到的训练数据，我们对现有 pre-train 的开源 causalLM 模型 （例如 GPT-J 6B 和 LLaMA 7B）进行 fine-tuning。为了降低模型训练的内存开销，本位使用了最新的 LoRA，大语言模型 quantization 技术，并且使用了 bitsandbyte 的 8bit AdamW 作为训练使用的 optimizer。本文模型的 fine-tuning 任务，在使用小的 batch-size 的情况下，最低仅仅需要 11GB 显存，完全可以在 1080Ti 的显卡上跑 fine-tuning。
 
 3. **基于 external graph toolkits 的 graph reasoning:** 训练好的 LLM 可以对任意 graph reasoning 的输入，自动插入并生成对应含有 API call 的输出。并且通过 post-processing，我们可以调用外部的 graph reasoning 工具包，实现 API call 并且把返回结构加入的生成结构之中，实现使用 LLM 对 graph 结构数据进行复杂推理的任务。
 
