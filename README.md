@@ -27,10 +27,11 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
   - [x] add working memory
   - [x] add query parser
   - [ ] add cli for interaction
-- [ ] Implement the CLI with GUI panel
 - [ ] Include other graph datasets
 - [ ] Add and test more LLMs
 - [ ] Add pre-trained graph models
+- [ ] Implement the CLI with GUI panel
+- [ ] Provide the demo for graph reasoning
 - [ ] Release web access and service
 
 ************************************************************************************************
