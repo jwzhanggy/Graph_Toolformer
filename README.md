@@ -8,7 +8,11 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
 ### Running Conda Environment
 
-See the shared environment.yml file [environment](./environment.yml)
+See the shared [environment.yml](./environment.yml) file. Create a local environment at your computer with command 
+```
+conda env create -f environment.yml
+```
+For the packages cannot be instead with the above conda command, you may consider to install via pip instead.
 
 ### References 
 (also \usepackage{hyperref} into your paper for adding the url address in the reference)
