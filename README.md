@@ -6,6 +6,8 @@
 
 Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
+Paper description in Chinese: [文章中文介绍](./中文介绍)
+
 ### Project Conda Environment
 
 See the shared [environment.yml](./environment.yml) file. Create a local environment at your computer with command 
