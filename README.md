@@ -13,7 +13,7 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 @article{zhang2023graph,
   title={Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT},
   author={Zhang, Jiawei},
-  howpublished = {\url{http://www.ifmlab.org/files/paper/graph_toolformer.pdf}},
+  note = {\url{http://www.ifmlab.org/files/paper/graph_toolformer.pdf}},
   year={2023},
   note = "[Online; Published 10-April-2023]"
 }
