@@ -36,9 +36,10 @@ For the packages cannot be instead with the above conda command, you may conside
 - [ ] Polish the framework
   - [x] add working memory
   - [x] add query parser
-  - [ ] add graph dataset hub
+  - [x] add query excutor
+  - [x] add graph dataset hub
   - [ ] add graph model hub
-  - [ ] add graph reasoning task hub
+  - [x] add graph reasoning task hub
   - [ ] add llm model hub
   - [ ] add cli for interaction
 - [ ] Add and test more LLMs
