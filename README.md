@@ -8,7 +8,7 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
 ### Running Conda Environment
 
-See the shared environment.yml file
+See the shared environment.yml file [environment](./environment.yml)
 
 ### References 
 (also \usepackage{hyperref} into your paper for adding the url address in the reference)
