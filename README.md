@@ -31,9 +31,10 @@ Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
   - [ ] add graph reasoning task hub
   - [ ] add llm model hub
   - [ ] add cli for interaction
-- [ ] Include other graph datasets
 - [ ] Add and test more LLMs
+- [ ] Include other graph datasets
 - [ ] Add more pre-trained graph models
+- [ ] Include more graph reasoning tasks
 - [ ] Implement the CLI with GUI panel
 - [ ] Provide the demo for graph reasoning
 - [ ] Release web access and service
