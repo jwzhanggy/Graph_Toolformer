@@ -33,12 +33,12 @@ For the packages cannot be instead with the above conda command, you may conside
 
 ## Tasks to be done
 
-- [ ] Polish the framework
+- [ ] Polish the framework: 6/8 done
   - [x] add working memory
   - [x] add query parser
   - [x] add query excutor
   - [x] add graph dataset hub
-  - [ ] add graph model hub
+  - [x] add graph model hub
   - [x] add graph reasoning task hub
   - [ ] add llm model hub
   - [ ] add cli for interaction
