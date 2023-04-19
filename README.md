@@ -33,14 +33,15 @@ For the packages cannot be instead with the above conda command, you may conside
 
 ## Tasks to be done
 
-- [ ] Polish the framework: 6/8 done
-  - [x] add working memory
-  - [x] add query parser
-  - [x] add query excutor
+- [ ] Polish the framework: 8/9 done
+  - [x] add working memory module
+  - [x] add query parser module
+  - [x] add query excutor module
   - [x] add graph dataset hub
   - [x] add graph model hub
   - [x] add graph reasoning task hub
-  - [ ] add llm model hub
+  - [x] add llm model hub
+  - [x] add llm trainer module
   - [ ] add cli for interaction
 - [ ] Add and test more LLMs
 - [ ] Include other graph datasets
