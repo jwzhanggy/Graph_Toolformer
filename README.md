@@ -17,7 +17,7 @@ conda env create -f environment.yml
 For the packages cannot be instead with the above conda command, you may consider to install via pip instead.
 
 ### References 
-(also \usepackage{hyperref} into your paper for adding the url address in the reference)
+(also add \usepackage{hyperref} into your paper for adding the url address in the reference)
 
 ```
 @article{zhang2023graph,
