@@ -33,7 +33,7 @@ For the packages cannot be instead with the above conda command, you may conside
 
 ## Tasks to be done
 
-- [ ] Polish the framework: 8/9 done
+- [x] Polish the framework: 8/8 done
   - [x] add working memory module
   - [x] add query parser module
   - [x] add query excutor module
@@ -42,13 +42,12 @@ For the packages cannot be instead with the above conda command, you may conside
   - [x] add graph reasoning task hub
   - [x] add llm model hub
   - [x] add llm trainer module
-  - [ ] add cli for interaction
-- [ ] Expand the framework: 0/4
+- [ ] Expand the framework: 0/4 done
   - [ ] Add and test more LLMs
   - [ ] Include more graph datasets
   - [ ] Add more pre-trained graph models
   - [ ] Include more graph reasoning tasks
-- [ ] Release the framework and service: 0/4
+- [ ] Release the framework and service: 0/4 done
   - [ ] Implement the CLI with GUI panel
   - [ ] Provide the demo for graph reasoning
   - [ ] Release web access and service
