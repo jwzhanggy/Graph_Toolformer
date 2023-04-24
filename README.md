@@ -6,6 +6,8 @@
 
 Paper URL at IFMLab: http://www.ifmlab.org/files/paper/graph_toolformer.pdf
 
+Paper URL at arxiv: https://arxiv.org/pdf/2304.11116.pdf
+
 Paper description in Chinese: [文章中文介绍](./中文介绍)
 
 ### Project Conda Environment
