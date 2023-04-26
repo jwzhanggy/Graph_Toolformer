@@ -44,11 +44,11 @@ For the packages cannot be instead with the above conda command, you may conside
   - [x] add graph reasoning task hub
   - [x] add llm model hub
   - [x] add llm trainer module
-- [ ] Expand the framework: 0/4 done
+- [ ] Expand the framework: 3/4 done
+  - [x] Include graph datasets
+  - [x] Add pre-trained graph models
+  - [x] Include graph reasoning tasks
   - [ ] Add and test more LLMs
-  - [ ] Include more graph datasets
-  - [ ] Add more pre-trained graph models
-  - [ ] Include more graph reasoning tasks
 - [ ] Release the framework and service: 0/4 done
   - [ ] Implement the CLI with GUI panel
   - [ ] Provide the demo for graph reasoning
