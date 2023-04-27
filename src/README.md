@@ -1,1 +1,1 @@
-Source code of the Graph-Toolformer Framework for various graph reasoning Tasks.
+Source code of the Graph-Toolformer Framework Demo for various graph reasoning Tasks.
