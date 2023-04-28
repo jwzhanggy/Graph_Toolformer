@@ -57,7 +57,7 @@ For the packages cannot be instead with the above conda command, you may conside
     - [x] Graph-Bert
     - [x] SEG-Bert
     - [x] KMeans Clustering
-    - [ ] Spectral Collaborative Filtering
+    - [ ] BPR, CF
     - [ ] TransE, TransR, TransH
   - [x] Include graph reasoning tasks
     - [x] graph property reasoning
