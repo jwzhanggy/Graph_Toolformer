@@ -47,6 +47,12 @@ For the packages cannot be instead with the above conda command, you may conside
 - [ ] Expand the framework: 3/4 done
   - [x] Include graph datasets
   - [x] Add pre-trained graph models
+    - [x] Toolx
+    - [x] Graph-Bert
+    - [x] SEG-Bert
+    - [ ] Spectral Clustering
+    - [ ] Spectral Collaborative Filtering
+    - [ ] TransE, TransR, TransH
   - [x] Include graph reasoning tasks
     - [x] graph property reasoning
     - [x] bibliographic paper topic reasoning
