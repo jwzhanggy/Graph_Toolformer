@@ -61,6 +61,8 @@ For the packages cannot be instead with the above conda command, you may conside
     - [ ] recommender system reasoning
     - [ ] knowledge graph reasoning
   - [ ] Add and test more LLMs
+    - [x] GPT-J
+    - [ ] LLaMA
 - [ ] Release the framework and service: 0/4 done
   - [ ] Implement the CLI with GUI panel
   - [ ] Provide the demo for graph reasoning
