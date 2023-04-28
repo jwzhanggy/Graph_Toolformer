@@ -49,21 +49,21 @@ For the packages cannot be instead with the above conda command, you may conside
     - [x] graph property dataset
     - [x] bibliographic networks: cora, pubmed, citeseer
     - [x] molecular graphs: proteins, nci1, mutag, ptc
-    - [x] social networks: email, dblp, youtube
+    - [x] social networks: twitter, foursquare
     - [x] recommender system: amazon, last.fm, movielens  
     - [x] knowledge graphs: wordnet, freebase 
   - [x] Add pre-trained graph models
     - [x] Toolx
     - [x] Graph-Bert
     - [x] SEG-Bert
-    - [ ] Spectral Clustering
+    - [x] KMeans Clustering
     - [ ] Spectral Collaborative Filtering
     - [ ] TransE, TransR, TransH
   - [x] Include graph reasoning tasks
     - [x] graph property reasoning
     - [x] bibliographic paper topic reasoning
     - [x] molecular graph function reasoning
-    - [ ] social network community reasoning
+    - [x] social network community reasoning
     - [ ] recommender system reasoning
     - [ ] knowledge graph reasoning
   - [ ] Add and test more LLMs
