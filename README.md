@@ -69,6 +69,8 @@ For the packages cannot be instead with the above conda command, you may conside
   - [ ] Add and test more LLMs
     - [x] GPT-J
     - [ ] LLaMA
+    - [ ] GPT-2
+    - [ ] OPT
 - [ ] Release the framework and service: 0/5 done
   - [ ] Polish and release the datasets
   - [ ] Implement the CLI with GUI panel
