@@ -48,6 +48,12 @@ For the packages cannot be instead with the above conda command, you may conside
   - [x] Include graph datasets
   - [x] Add pre-trained graph models
   - [x] Include graph reasoning tasks
+    - [x] graph property reasoning
+    - [x] bibliographic paper topic reasoning
+    - [x] molecular graph function reasoning
+    - [ ] social network community reasoning
+    - [ ] recommender system reasoning
+    - [ ] knowledge graph reasoning
   - [ ] Add and test more LLMs
 - [ ] Release the framework and service: 0/4 done
   - [ ] Implement the CLI with GUI panel
