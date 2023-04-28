@@ -46,6 +46,12 @@ For the packages cannot be instead with the above conda command, you may conside
   - [x] add llm trainer module
 - [ ] Expand the framework: 3/4 done
   - [x] Include graph datasets
+    - [x] graph property dataset
+    - [x] bibliographic networks: cora, pubmed, citeseer
+    - [x] molecular graphs: proteins, nci1, mutag, ptc
+    - [x] social networks: email, dblp, youtube
+    - [x] recommender system: amazon, last.fm, movielens  
+    - [x] knowledge graphs: wordnet, freebase 
   - [x] Add pre-trained graph models
     - [x] Toolx
     - [x] Graph-Bert
