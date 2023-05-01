@@ -1,2 +1,8 @@
-We are still polishing the framework and adding more LLMs to the Graph-Toolformer framework.<br>
-Once the framework is mature and ready to use, all the datasets will be shared to the community.
+# Data used in Graph-Toolformer Framework.
+
+The data used in graph-toolformer include four part, which are introduced in detail at the following pages, respectively:
+
+- Graph Raw Datasets
+- Graph Reasoning Prompt Dataset
+- Pre-trained Graph Model Checkpoints
+- Fine-tuned Language Model Checkpoints
