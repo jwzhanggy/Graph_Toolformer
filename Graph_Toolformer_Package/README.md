@@ -92,6 +92,48 @@ The koala folder covers the pre-trained graph models and pre-trained language mo
 - Recommender System Reasoning Model: BPR (Bayesian Personalized Ranking)
 - Knowledge Graph Reasoning Model: TransE
 
+#### Toolx
+
+The current toolx model is implemented based on networkx, and toolx will implement different functions to calculate different graph properties mentioned in the paper, which are also listed as follows:
+- order
+- size
+- density
+- eccentricity
+- radius
+- diameter
+- center
+- shortest_path
+- avg_path_length
+- min_path_length
+- max_path_length
+- periphery
+
+#### Graph-Bert
+
+The Graph-Bert model was proposed in paper entitled "[Graph-Bert: Only Attention is Needed for Learning Graph Representations](https://arxiv.org/abs/2001.05140)". 
+
+The Graph-Bert will be used to implement the bibliographic network paper topic inference function, which will be reduced to the node classification task:
+
+- node_classification in GraphBertNodeClassification.py
+
+The model has been pre-trained on the cora, pubmed, citeseer datasets already based on the identical train/test sets introduced in the paper. Both the model code and the pre-trained model parameter checkpoints are provided.
+
+As to the original source code, readers may consider to refer to the repository (https://github.com/jwzhanggy/Graph-Bert) for more information.
+
+#### SEG-Bert
+
+The 
+
+#### KMeans
+
+#### BPR
+
+#### TransE
+
 ### Pre-trained Language Models
 
-- GPT-J 6B 8Bit
+- GPT-J 6B 8Bit 
+- LLaMA (To be added)
+- Bloom (To be added)
+- OPT (To be added)
+- GPT2 (To be added)
