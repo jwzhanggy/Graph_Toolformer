@@ -23,7 +23,7 @@ These data are introduced in detail and can be downloaded at the following pages
 - [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
 - [Pre-trained graph model checkpoint download link (shared from google drive)](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing)
 
-### Fine-tuned Language Model Checkpoints
+### Fine-tuned Language Model Checkpoints (to be released)
 
 - [Fine-tuned LLM descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
 - [Fine-tuned LLM checkpoint download link (shared from google drive)](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing)
