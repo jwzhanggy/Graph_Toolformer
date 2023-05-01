@@ -77,7 +77,7 @@ dataset = {
 ```
 
 ## Pre-Trained Graph Models and fine-tuned LLMs used in Graph-Toolformer
-(Download URL: )
+(Download URL: To be provided)
 
 The koala folder covers the pre-trained graph models and pre-trained language models used in toolformer. Both the model code and pre-trained results/parameters are provided in the downloaded folder.
 
