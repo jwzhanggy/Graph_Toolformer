@@ -1,5 +1,5 @@
 
-# Source code of the Graph-Toolformer Package for various graph reasoning Tasks.
+# Graph-Toolformer Package for Graph Reasoning
 
 The package code folder contains three sub_folders organized as follows:
 
