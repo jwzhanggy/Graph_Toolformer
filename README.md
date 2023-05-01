@@ -34,6 +34,16 @@ For the packages cannot be installed with the above conda command, you may consi
 
 ************************************************************************************************
 
+🔴
+🟠
+⚫
+⚪
+🟣
+🟢
+🟡
+🔵
+
+
 ## Tasks to be done
 
 - [x] Polish the framework: 7/8 done
