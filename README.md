@@ -1,4 +1,4 @@
-# Graph-Toolformer (project in-preparation)
+# Graph-Toolformer (project in-working)
 
 ![framework](./figures/framework.png)
 
