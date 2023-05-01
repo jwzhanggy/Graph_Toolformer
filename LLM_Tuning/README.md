@@ -1,5 +1,7 @@
 # Source code for Graph-Toolformer LLM Fine-Tuning with graph reasoning prompts
 
+### the fine-tuned LLM checkpoint will be used in the Graph-Toolformer Framework for various graph reasoning tasks.
+
 ![pipeline!](pipeline.png)
 
 ************************************************************************************************
