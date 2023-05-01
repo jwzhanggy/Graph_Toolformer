@@ -1,6 +1,7 @@
 
 # Graph-Toolformer Package for Graph Reasoning
 
+## Package Contents
 The package code folder contains three sub_folders organized as follows:
 
 ```
@@ -163,8 +164,12 @@ The TransE will be used to implement the knowledge graph entity/relation searchi
 
 ### Pre-trained Language Models
 
-- GPT-J 6B 8Bit 
+- GPT-J 6B 8bit 
 - LLaMA (To be added)
 - Bloom (To be added)
 - OPT (To be added)
 - GPT2 (To be added)
+
+#### GPT-J 6B 8bit
+
+
