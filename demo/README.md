@@ -14,14 +14,17 @@
 
 The datasets are stored in binary format, which can be loaded with pickle, e.g., as follows:
 
+```
 import pickle
 f = open('./cora', 'rb')
 dataset = pickle.load(f)
 f.close()
 print(dataset.keys())
+```
 
 #### For the datasets with 1 single large-scale graphs (including, Cora, Pubmed, Citeseer; Twitter, Foursquare; Amazon, Last-FM, Movielens; WorldNet, Freebase), the loaded "dataset" is organized with a python dictionary the following format:
 
+```
 dataset = {
         "data_profile": {
             'name': dataset_name,
@@ -37,9 +40,11 @@ dataset = {
           node_pair: {'features': feature, 'label': label,}
         }
     }
+```
 
 #### For the datasets with multiple graph instances (GPR; Proteins, Mutag, NCI1, PTC), the loaded "dataset" is organized with a python dictionary the following format:
 
+```
 dataset = {
         "data_profile": {
             'name': dataset_name,
@@ -55,6 +60,8 @@ dataset = {
             }
         }
     }
+```
 
 ## Pre-Trained Graph Models used in Graph-Toolformer
 (Download URL: )
+
