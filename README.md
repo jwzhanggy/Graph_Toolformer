@@ -23,11 +23,12 @@ For the packages cannot be installed with the above conda command, you may consi
 
 ```
 @article{zhang2023graph,
-  title={Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT},
-  author={Zhang, Jiawei},
-  note = {\url{http://www.ifmlab.org/files/paper/graph_toolformer.pdf}},
-  year={2023},
-  note = "[Online; Published 10-April-2023]"
+    title={Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT},
+    author={Zhang, Jiawei},
+    year={2023},
+    eprint={2304.11116},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI},
 }
 ```
 
