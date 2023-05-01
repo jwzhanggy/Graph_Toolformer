@@ -139,7 +139,15 @@ As to the original source code, readers may consider to refer to the repository 
 #### KMeans for Social Network Community Reasoning
 
 To detect the social network community, based on the social network structure (adjacency matrix), we calculate the nodes' pairwise common neighbor numbers to define their closeness, which will be fed to KMeans for community detection.
-
+```
+- community(graph): return the community label for all user nodes in the social network
+- community(graph, node): return the community label for specify input user nodes
+- community_count(graph): return the number of detected communities
+- community_avg_size(graph): return the average size of detected communities
+- community_max_size(graph): return the max size of detected communities
+- community_size(graph, node): return the size of community that the input user node belongs to
+- common_community_check(graph, node1, node2): check if user1 and user2 belong to the same community or not
+```
 #### BPR
 
 The BPR model was proposed in the paper entitled "[BPR: Bayesian personalized ranking from implicit feedback](https://arxiv.org/pdf/1205.2618.pdf)".
