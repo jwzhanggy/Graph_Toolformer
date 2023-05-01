@@ -1,7 +1,17 @@
-## Source code of the Graph-Toolformer Framework Demo for various graph reasoning Tasks.
+# Source code of the Graph-Toolformer Framework Demo for various graph reasoning Tasks.
+
+The demo code folder contains three sub_folders organized as follows:
+./demo
+./demo/graph_datasets
+./demo/koala
+./demo/src
+
+The src folder is uploaded to github, and the remaining two folders are too big and can be downloaded with the URL provided as follows.
 
 ## Graph Datasets used in Graph-Toolformer
 (Download URL: https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing)
+
+ABout 15 different graph datasets are used and studied in graph-toolformer in the current version, which include
 
 - Graph Property Reasoning Dataset: GPR
 - Bibliographic Network Datasets: Cora, Pubmed, Citeseer
@@ -65,3 +75,17 @@ dataset = {
 ## Pre-Trained Graph Models used in Graph-Toolformer
 (Download URL: )
 
+The koala folder covers the pre-trained graph models and pre-trained language models used in toolformer. Both the model code and pre-trained results/parameters are provided in the downloaded folder.
+
+### Pre-trained Graph Models
+
+- Graph Property Reasoning Model: toolx
+- Bibliographic Network Reasoning Model: Graph-Bert
+- Molecular Graph Reasoning Model: Model, SEG-Bert
+- Online Social Network Reasoning Model: KMeans
+- Recommender System Reasoning Model: BPR (Bayesian Personalized Ranking)
+- Knowledge Graph Reasoning Model: TransE
+
+### Pre-trained Language Models
+
+- GPT-J 6B 8Bit
