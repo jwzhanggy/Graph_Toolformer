@@ -46,28 +46,28 @@ For the packages cannot be installed with the above conda command, you may consi
   - [x] add llm model hub
   - [ ] add llm trainer module
 - [ ] Expand the framework: 3/4 done
-  - [x] Include graph datasets
+  - [x] Include graph datasets: done
     - [x] graph property dataset
     - [x] bibliographic networks: cora, pubmed, citeseer
     - [x] molecular graphs: proteins, nci1, mutag, ptc
     - [x] social networks: twitter, foursquare
     - [x] recommender system: amazon, last.fm, movielens  
     - [x] knowledge graphs: wordnet, freebase 
-  - [x] Add pre-trained graph models
+  - [x] Add pre-trained graph models: done
     - [x] Toolx
     - [x] Graph-Bert
     - [x] SEG-Bert
     - [x] KMeans Clustering
     - [x] BPR
     - [x] TransE
-  - [x] Include graph reasoning tasks
+  - [x] Include graph reasoning tasks: done
     - [x] graph property reasoning
     - [x] bibliographic paper topic reasoning
     - [x] molecular graph function reasoning
     - [x] social network community reasoning
     - [x] recommender system reasoning
     - [x] knowledge graph reasoning
-  - [ ] Add and test more LLMs
+  - [ ] Add and test more LLMs: 1/5 done
     - [x] GPT-J
     - [ ] LLaMA
     - [ ] GPT-2
