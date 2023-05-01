@@ -26,11 +26,11 @@ About 15 different graph datasets are used and studied in graph-toolformer in th
 
 ### Dataset Formats.
 
-The datasets are stored in binary format, which can be loaded with pickle, e.g., as follows:
+The datasets are stored in binary format, which can be loaded with pickle, e.g., the GPR dataset can be loaded as follows:
 
 ```
 import pickle
-f = open('./cora', 'rb')
+f = open('./gpr', 'rb')
 dataset = pickle.load(f)
 f.close()
 print(dataset.keys())
