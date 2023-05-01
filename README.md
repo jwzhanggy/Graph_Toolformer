@@ -46,7 +46,7 @@ For the packages cannot be installed with the above conda command, you may consi
 
 ## Tasks to be done
 
-- [x] Polish the framework: 7/8 done
+- [x] 🟢 Polish the framework: 7/8 done
   - [x] 🟢 add working memory module
   - [x] 🟢 add query parser module
   - [x] 🟢 add query excutor module
@@ -55,7 +55,7 @@ For the packages cannot be installed with the above conda command, you may consi
   - [x] 🟢 add graph reasoning task hub
   - [x] 🟢 add llm model hub
   - [ ] 🟠 add llm trainer module
-- [ ] Expand the framework: 3/4 done
+- [ ] 🟢 Expand the framework: 3/4 done
   - [x] 🟢 Include graph datasets: done
     - [x] graph property dataset
     - [x] bibliographic networks: cora, pubmed, citeseer
@@ -89,9 +89,9 @@ For the packages cannot be installed with the above conda command, you may consi
     - [ ] 🟠 graph reasoning prompt data
     - [x] 🟢 pre-trained graph model checkpoints
     - [ ] 🟠 fine-tuned llm model checkpoints
-  - [ ] Implement the CLI with GUI panel
-  - [ ] Provide the demo for graph reasoning
-  - [ ] Add API for customerized graph reasoning
-  - [ ] Release web access and service
+  - [ ] 🟠 Implement the CLI with GUI panel
+  - [ ] 🟠 Provide the demo for graph reasoning
+  - [ ] 🟠 Add API for customerized graph reasoning
+  - [ ] 🟠 Release web access and service
 
 
