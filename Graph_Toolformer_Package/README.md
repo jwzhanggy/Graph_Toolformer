@@ -15,7 +15,7 @@ The src folder is uploaded to github, and the remaining two folders are too big 
 ## Graph Datasets used in Graph-Toolformer
 (Download URL: https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing)
 
-ABout 15 different graph datasets are used and studied in graph-toolformer in the current version, which include
+About 15 different graph datasets are used and studied in graph-toolformer in the current version, which include
 
 - Graph Property Reasoning Dataset: GPR
 - Bibliographic Network Datasets: Cora, Pubmed, Citeseer
