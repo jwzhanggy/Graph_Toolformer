@@ -1,10 +1,12 @@
 # Source code of the Graph-Toolformer Framework Demo for various graph reasoning Tasks.
 
 The demo code folder contains three sub_folders organized as follows:
+```
 ./demo
 ./demo/graph_datasets
 ./demo/koala
 ./demo/src
+```
 
 The src folder is uploaded to github, and the remaining two folders are too big and can be downloaded with the URL provided as follows.
 
