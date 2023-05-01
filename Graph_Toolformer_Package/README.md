@@ -92,9 +92,10 @@ The koala folder covers the pre-trained graph models and pre-trained language mo
 - Recommender System Reasoning Model: BPR (Bayesian Personalized Ranking)
 - Knowledge Graph Reasoning Model: TransE
 
-#### Toolx
+#### Toolx for Graph Property Reasoning
 
 The current toolx model is implemented based on networkx, and toolx will implement different functions to calculate different graph properties mentioned in the paper, which are also listed as follows:
+```
 - order
 - size
 - density
@@ -107,28 +108,58 @@ The current toolx model is implemented based on networkx, and toolx will impleme
 - min_path_length
 - max_path_length
 - periphery
+```
 
-#### Graph-Bert
+#### Graph-Bert for Bibliographic Network Paper Topic Reasoning
 
 The Graph-Bert model was proposed in paper entitled "[Graph-Bert: Only Attention is Needed for Learning Graph Representations](https://arxiv.org/abs/2001.05140)". 
 
 The Graph-Bert will be used to implement the bibliographic network paper topic inference function, which will be reduced to the node classification task:
-
+```
 - node_classification in GraphBertNodeClassification.py
-
+```
 The model has been pre-trained on the cora, pubmed, citeseer datasets already based on the identical train/test sets introduced in the paper. Both the model code and the pre-trained model parameter checkpoints are provided.
 
 As to the original source code, readers may consider to refer to the repository (https://github.com/jwzhanggy/Graph-Bert) for more information.
 
-#### SEG-Bert
+#### SEG-Bert for Molecualr Graph Function Reasoning
 
-The 
+The SEG-Bert model was proposed in the paper entitled "[Segmented Graph-Bert for Graph Instance Modeling
+](https://arxiv.org/abs/2002.03283)".
 
-#### KMeans
+The SEG-Bert will be used to implement the molecular graph function inference function, which will be reduced to the graph classification task:
+```
+- graph_classification in SegmentedGraphBertGraphClassification.py
+```
+The model has been pre-trained on the proteins, mutag, nci1 and ptc datasets already based on the identical train/test sets introduced in the paper. Both the model code and the pre-trained model parameter checkpoints are provided.
+
+As to the original source code, readers may consider to refer to the repository ([https://github.com/jwzhanggy/Graph-Bert](https://github.com/jwzhanggy/SEG-BERT)) for more information.
+
+#### KMeans for Social Network Community Reasoning
+
+To detect the social network community, based on the social network structure (adjacency matrix), we calculate the nodes' pairwise common neighbor numbers to define their closeness, which will be fed to KMeans for community detection.
 
 #### BPR
 
+The BPR model was proposed in the paper entitled "[BPR: Bayesian personalized ranking from implicit feedback](https://arxiv.org/pdf/1205.2618.pdf)".
+
+The BPR model will be used to implement the social network community detection functions, which will be reduced to the graph partition/clustering tasks:
+```
+- recommendation in BPR.py
+- topk_recommendation in BPR.py
+```
+
 #### TransE
+
+The TransE model was proposed in the paper entitled "[Transition-based Knowledge Graph Embedding with Relational Mapping
+Properties](https://aclanthology.org/Y14-1039.pdf)".
+
+The TransE will be used to implement the knowledge graph entity/relation searching functions, which will be reduced to the graph searching tasks:
+```
+- search_head_entity in TransE.py
+- search_tail_entity in TransE.py
+- search_relation in TransE.py
+```
 
 ### Pre-trained Language Models
 
