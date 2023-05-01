@@ -12,6 +12,7 @@ These data are introduced in detail and can be downloaded at the following pages
 ### Graph Raw Datasets
 
 - [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
+- [Graph raw dataset download link (shared from google drive)](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing)
 
 ### Graph Reasoning Prompt Dataset
 
@@ -19,8 +20,10 @@ These data are introduced in detail and can be downloaded at the following pages
 
 ### Pre-trained Graph Model Checkpoints
 
-(https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
+- [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
+- [Pre-trained graph model checkpoint download link (shared from google drive)](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing)
 
 ### Fine-tuned Language Model Checkpoints
 
-(https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
+- [Fine-tuned LLM descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
+- [Fine-tuned LLM checkpoint download link (shared from google drive)](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing)
