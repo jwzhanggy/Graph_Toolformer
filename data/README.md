@@ -11,7 +11,7 @@ These data are introduced in detail and can be downloaded at the following pages
 
 ### Graph Raw Datasets
 
-(Download URL: https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
+- [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
 
 ### Graph Reasoning Prompt Dataset
 
