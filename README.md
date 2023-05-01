@@ -16,7 +16,7 @@ See the shared [environment.yml](./environment.yml) file. Create a local environ
 ```
 conda env create -f environment.yml
 ```
-For the packages cannot be instead with the above conda command, you may consider to install via pip instead.
+For the packages cannot be installed with the above conda command, you may consider to install via pip instead.
 
 ### References 
 (also add \usepackage{hyperref} into your paper for adding the url address in the reference)
