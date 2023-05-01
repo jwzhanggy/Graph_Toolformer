@@ -45,7 +45,8 @@ dataset = {
             'order': node_number,
             'size': link_number,
             'is_directed': boolean,
-            'is_weighted': boolean
+            'is_weighted': boolean,
+            # besides the above profile information, for some data, we will also include some other attributes, like feature vector dimensions, label space dimension, etc., in the data profile dict.
         },
         "nodes": {
           node_id: {'features': feature, 'label': label,}
@@ -64,7 +65,8 @@ dataset = {
             'name': dataset_name,
             'graph_number': graph_number,
             'is_directed': boolean,
-            'is_weighted': boolean
+            'is_weighted': boolean,
+            # besides the above profile information, for some data, we will also include some other attributes, like feature vector dimensions, label space dimension, etc., in the data profile dict.
         },
         'graph_set': {
             graph_id: {
