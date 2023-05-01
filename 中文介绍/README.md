@@ -75,4 +75,4 @@
 ![result!](result.png)
 
 ## 结论和后续工作
-本文提出了通用的 Graph-ToolFormer 框架，实现了使用 LLM 来完成 graph reasoning 的任务。目前 Graph-ToolFormer 还只包含 GPT-J 一个语言模型和文中提到的少量 graph reasoning 任务。根据作者最新信息，他们将会继续向 Graph-ToolFormer 添加跟多的语言模型，graph data 和 graph reasoning 任务，并且会将 Graph-ToolFormer 上线且增加 GUI，使得用户可以在线完成各类型的 graph reasoning 任务。
+本文提出了通用的 Graph-ToolFormer 框架，实现了使用 LLM 来完成 graph reasoning 的任务。目前 Graph-ToolFormer 还只包含 GPT-J 一个语言模型和文中提到的少量 graph reasoning 任务。随后我们将会继续向 Graph-ToolFormer 添加跟多的语言模型，graph data 和 graph reasoning 任务，并且会将 Graph-ToolFormer 上线且增加 GUI，使得用户可以在线完成各类型的 graph reasoning 任务。
