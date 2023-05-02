@@ -11,7 +11,7 @@ The package code folder contains three sub_folders organized as follows:
 ./Graph_Toolformer_Package/src
 ```
 
-The src folder is uploaded to github, and the remaining two folders are too big and can be downloaded with the URL provided as follows.
+The src folder is uploaded to github, and the remaining two folders are too big and can be downloaded with the URL provided as follows. Instructions about how to use the package will be provided shortly after the cli is ready.
 
 ## Graph Datasets used in Graph-Toolformer
 (Download URL: https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing)
