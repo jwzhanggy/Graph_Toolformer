@@ -89,9 +89,9 @@ For the packages cannot be installed with the above conda command, you may consi
     - [ ] 🟠 graph reasoning prompt data
     - [x] 🟢 pre-trained graph model checkpoints
     - [ ] 🟠 fine-tuned llm model checkpoints
-  - [ ] 🟠 Implement the CLI with GUI panel
+  - [ ] 🟠 Implement the CLI for framework usage
   - [ ] 🟠 Provide the demo for graph reasoning
   - [ ] 🟠 Add API for customerized graph reasoning
-  - [ ] 🟠 Release web access and service
+  - [ ] 🟠 Release GUI and web access/service
 
 
