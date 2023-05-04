@@ -1,7 +1,7 @@
 # Graph-Toolformer (project done)
 
 ## May 4 Updates:
-### - Update 1: All the datasets and model checkpoints have been publicized
+### - Update 1: All the datasets and model checkpoints have been publicized, some large-sized data are shared via google drive
 > **Note**
 > - **Datasets and Model Checkpoints**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/data)
 ### - Update 2: Source code of both Graph-toolformer LLM Tuning and Graph Reasoning Demo are released
