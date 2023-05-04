@@ -1,6 +1,21 @@
 
 # Graph-Toolformer Package for Graph Reasoning
 
+************************************************************************************************
+
+## How to run the code?
+
+After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command
+
+```
+python3 Framework_Graph_Toolformer.py
+```
+By changing the "if 0" to "if 1" in the bottom main function of Framework_Graph_Toolformer.py, you can try different reasoning tasks.
+
+We will also allow users to use command lines to interact with the Graph-toolformer framework. The CLI will be added shortly.
+
+************************************************************************************************
+
 ## Package Contents
 The package code folder contains three sub_folders organized as follows:
 
