@@ -2,9 +2,9 @@
 
 The data used in graph-toolformer include four parts, which are shared via Google Drive:
 
-- **1. Graph Raw Datasets**: the raw datasets of different graphs studied in this framework
-- **2. Graph Reasoning Prompt Dataset**: the designed prompts for various graph reasoning tasks
-- **3. Pre-trained Graph Model Checkpoints**: pre-trained graph models for various graph reasoning tasks
+- **1. Graph Raw Datasets**: about 15 different graph benchmark datasets are used in this project
+- **2. Graph Reasoning Prompt Dataset**: the designed prompts for graph reasoning tasks on these 15 graph benchmark datasets
+- **3. Pre-trained Graph Model Checkpoints**: 5 different pre-trained graph models are used for various graph reasoning tasks
 - **4. Fine-tuned Language Model Checkpoints**: fine-tuned language models for different graph reasoning tasks
 
 
