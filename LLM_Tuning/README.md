@@ -4,6 +4,12 @@
 
 ************************************************************************************************
 
+## What this directory is used for?
+
+In this directory, we will fine-tune the LLMs with graph reasoning prompt datasets. The tuned LLMs will be copied to the Graph_Toolformer_Package (the fine-tuned LLMs in the koala directory) for various graph reasoning tasks.
+
+************************************************************************************************
+
 ## How to run the code?
 
 After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command
