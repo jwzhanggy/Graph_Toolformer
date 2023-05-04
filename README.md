@@ -1,4 +1,4 @@
-# Graph-Toolformer (project done)
+# Graph-Toolformer
 
 ## 🟢 May 4 Updates:
 ### - 🟢 Update 1: All the datasets and model checkpoints have been publicized, some large-sized data are shared via google drive
