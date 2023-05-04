@@ -8,7 +8,7 @@
 After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command
 
 ```
-python3 Framework_Graph_Toolformer.py
+python3 ./src/Framework_Graph_Toolformer.py
 ```
 By changing the "if 0" to "if 1" in the bottom main function of Framework_Graph_Toolformer.py, you can try different reasoning tasks.
 
