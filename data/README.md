@@ -14,7 +14,7 @@ The data used in graph-toolformer include four parts:
 
 ### 2. Graph Reasoning Prompt Dataset ([Download](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt))
 
-- [Graph reasoning prompt descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_LLM_Training/prompt)
+- [Graph reasoning prompt descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt/README.md)
 
 ### 3. Pre-trained Graph Model Checkpoints ([Download](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
 
