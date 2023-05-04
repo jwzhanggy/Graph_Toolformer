@@ -15,7 +15,7 @@ This directory contains the graph reasoning prompts for 15 different graph datas
 
 Each directory contains the train/test graph reasoning tuples for different graph datasets.
 
-- 🟢 **mixed**: it merges all train/test prompts from all the following 15 graph dataset (except the graph_data_loading), we will use this for the LLM tuning.
+- **mixed**: it merges all train/test prompts from all the following 15 graph dataset (except the graph_data_loading), we will use this for the LLM tuning.
 - **graph_properties**: it contains the train/test prompts for the gpr dataset created in this paper on graph property reasoning
 - **bibliographic_networks**: it contains the train/test prompts for 3 bibliographc network reasoning datasets, cora, pubmed, citeseer
 - **molecular_graphs**: it contains the train/test prompts for 4 molecular graph reasoning datasets, proteins, mutag, nci1, ptc
