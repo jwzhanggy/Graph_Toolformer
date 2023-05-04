@@ -8,6 +8,7 @@ import numpy as np
 import torch
 import time
 import random
+from transformers import set_seed
 
 method_name_list = ['GPTJ']
 
@@ -19,16 +20,15 @@ method_checkpoint_cache_dict = {
 }
 
 task_data_dict = {
-    'graph_data_loading': {None: 0},
-    #'graph_properties': {None: 0},
-    #'bibliographic_networks': {'cora': 0, 'citeseer': 0, 'pubmed': 0},
-    #'molecular_graphs': {'mutag': 0, 'nci1': 0, 'proteins': 0, 'ptc': 0},
-    #'recommender_systems': {'movielens': 0, 'last-fm': 0, 'amazon': 0},
-    #'social_networks': {'dblp': 0, 'email': 0, 'youtube': 0},
-    #'knowledge_graphs': {'freebase': 0, 'worldnet': 0},
+    # 'graph_data_loading': {None: 15},
+    # 'graph_properties': {None: 7},
+    # 'bibliographic_networks': {'cora': 10, 'citeseer': 10, 'pubmed': 10},
+    # 'molecular_graphs': {'mutag': 10, 'nci1': 10, 'proteins': 10, 'ptc': 10},
+    # 'recommender_systems': {'movielens': 10, 'last-fm': 10, 'amazon': 10},
+    # 'social_networks': {'foursquare': 10, 'twitter': 6},
+    # 'knowledge_graphs': {'freebase': 10, 'worldnet': 10},
+    'mixed': {None: 3}
 }
-
-
 
 for method_name in method_name_list:
     for reasoning_task in task_data_dict:
@@ -41,12 +41,14 @@ for method_name in method_name_list:
                 np.random.seed(random_seed)
                 torch.manual_seed(random_seed)
                 torch.cuda.manual_seed_all(random_seed)
+                set_seed(random_seed)
                 # use a smaller batch_size and max_length for GPUs with smaller memory
-                # 4090: batch_size 8, max_length 128 or batch_size 4, max_length 256
-                # 1080Ti: batch_size 1 or 2, max_length 64
-                batch_size = 8
+                # A100 (80G): batch_size 32, max_length 128 or batch_size 16, max_length 256
+                # 4090 (24G): batch_size 8, max_length 128 or batch_size 4, max_length 256
+                # 1080Ti (11G): batch_size 1 or 2, max_length 64
+                batch_size = 32
                 max_length = 128
-                max_epoch = 12
+                max_epoch = task_data_dict[reasoning_task][dataset_name]
                 device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
                 fine_tuned_checkpoint_filename = '{}_{}_{}_{}_{}'.format(method_name, reasoning_task, dataset_name, max_epoch, max_length)
                 print(fine_tuned_checkpoint_filename)
@@ -68,7 +70,7 @@ for method_name in method_name_list:
                 method_obj.max_epoch = max_epoch
 
                 result_obj = Result_Saver('saver', '')
-                result_obj.result_destination_folder_path = '../result/'
+                result_obj.result_destination_folder_path = './result/'
                 result_obj.result_destination_file_name = 'Graph_Toolformer_{}_generation_result'.format(fine_tuned_checkpoint_filename)
 
                 setting_obj = Setting_Regular('regular settings', '')
