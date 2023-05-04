@@ -175,10 +175,6 @@ The TransE will be used to implement the knowledge graph entity/relation searchi
 ### Pre-trained Language Models
 
 - GPT-J 6B 8bit 
-- LLaMA (To be added)
-- Bloom (To be added)
-- OPT (To be added)
-- GPT2 (To be added)
 
 #### GPT-J 6B 8bit
 
