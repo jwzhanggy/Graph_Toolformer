@@ -192,7 +192,9 @@ The TransE will be used to implement the knowledge graph entity/relation searchi
 ### Pre-trained Language Models
 
 - GPT-J 6B 8bit 
+- LLaMA (To be Done)
 
 #### GPT-J 6B 8bit
 
+The EleutherAI's GPT-J (6B) is a transformer model trained using Ben Wang's ``[Mesh Transformer JAX](https://www.eleuther.ai/artifacts/mtj)'' that has 6 billion parameters. To load GPT-J in float 32, it will require 22+GB RAM to load the model and the fine-tuning will require at least 4x RAM size. To further lower-down the RAM consumption for GPT-J (6B), researchers also propose to quantize it with 8-bit weights, which allows scalable fine-tuning with LoRA (Low-Rank Adaptation) and 8-bit Adam and GPU quantization from bitsandbytes. The Graph-Toolformer (GPT-J 6B, 8bit) model will use GPT-J 6B 8bit as the base model for fine-tuning.
 
