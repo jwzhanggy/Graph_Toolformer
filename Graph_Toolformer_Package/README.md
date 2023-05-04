@@ -5,12 +5,12 @@
 
 ## How to run the demo code?
 
-After downloading this directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command
+After downloading this directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the demo
 
 ```
 python3 ./src/Framework_Graph_Toolformer.py
 ```
-You can type in inputs which are similar to the prompt inputs, and the model will complete the reasoning and return the otuputs. The reasoning process will call both the LLMs and GNN models, so generating the output will take some time. The GNN models are pre-trained according to the previous papers, and the LLMs is fine-tuned with the code in the LLM_Tunign directory based on the prompt datasets.
+You can type in inputs which are similar to the prompt inputs, and the model will carry out the reasoning task and return the otuputs. The reasoning process will call both the LLMs and GNN models, so generating the output will take some time. The GNN models are pre-trained according to the previous papers, and the LLMs is fine-tuned with the code in the LLM_Tunign directory based on the prompt datasets.
 
 By changing the "if 0" to "if 1" in the bottom main function of Framework_Graph_Toolformer.py, you can try different reasoning tasks.
 
