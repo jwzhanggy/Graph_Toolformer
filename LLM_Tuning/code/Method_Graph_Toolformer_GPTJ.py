@@ -80,7 +80,7 @@ class Method_Graph_Toolformer_GPTJ(method):
                 loss.backward()
                 self.optimizer.step()
                 self.optimizer.zero_grad()
-            if epoch > 4:
+            if False:
                 self.test(self.data['test'], fast_check=True)
         self.model.gradient_checkpointing_disable()
 
