@@ -1,7 +1,5 @@
 # Source code for Graph-Toolformer LLM Fine-Tuning with graph reasoning prompts
 
-### Plan to integrate the LLM tuning code into the Graph-Toolformer-Package soon. After we move the LLM fine-tuning function to Graph-Toolformer-Package, this directory will be deleted.
-
 ![pipeline!](pipeline.png)
 
 ************************************************************************************************
