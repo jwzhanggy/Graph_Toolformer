@@ -12,7 +12,7 @@ In this directory, we will fine-tune the LLMs with graph reasoning prompt datase
 
 ## How to run the code?
 
-After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command
+After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the LLMs fine-tuning with the prompt datasets:
 
 ```
 python3 gtoolformer_gptj_script.py
