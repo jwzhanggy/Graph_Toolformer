@@ -35,12 +35,12 @@ The src folder is uploaded to github, and the remaining two folders are too big 
 
 About 15 different graph datasets are used and studied in graph-toolformer in the current version, which include
 
-- Graph Property Reasoning Dataset: GPR
-- Bibliographic Network Datasets: Cora, Pubmed, Citeseer
-- Molecular Graph Datasets: Proteins, Mutag, NCI1, PTC
-- Online Social Network Datasets: Twitter, Foursquare
-- Recommender System Datasets: Amazon, Last-FM, Movielens
-- Knowledge Graph Datasets: WorldNet, Freebase
+- **Graph Property Reasoning Dataset**: GPR
+- **Bibliographic Network Datasets**: Cora, Pubmed, Citeseer
+- **Molecular Graph Datasets**: Proteins, Mutag, NCI1, PTC
+- **Online Social Network Datasets**: Twitter, Foursquare
+- **Recommender System Datasets**: Amazon, Last-FM, Movielens
+- **Knowledge Graph Datasets**: WorldNet, Freebase
 
 ### Dataset Formats.
 
