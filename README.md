@@ -1,4 +1,4 @@
-# Graph-Toolformer (project in-working)
+# Graph-Toolformer (project done)
 
 ![framework](./figures/framework.png)
 
@@ -46,7 +46,7 @@ For the packages cannot be installed with the above conda command, you may consi
 
 ## Tasks to be done
 
-- [x] 🟢 Polish the framework: 7/8 done
+- [x] 🟢 Polish the framework: 7/7 done
   - [x] 🟢 add working memory module
   - [x] 🟢 add query parser module
   - [x] 🟢 add query excutor module
@@ -54,41 +54,41 @@ For the packages cannot be installed with the above conda command, you may consi
   - [x] 🟢 add graph model hub
   - [x] 🟢 add graph reasoning task hub
   - [x] 🟢 add llm model hub
-  - [ ] 🟠 add llm trainer module
 - [ ] 🟢 Expand the framework: 3/4 done
   - [x] 🟢 Include graph datasets: done
-    - [x] graph property dataset
-    - [x] bibliographic networks: cora, pubmed, citeseer
-    - [x] molecular graphs: proteins, nci1, mutag, ptc
-    - [x] social networks: twitter, foursquare
-    - [x] recommender system: amazon, last.fm, movielens  
-    - [x] knowledge graphs: wordnet, freebase 
+    - [x] 🟢 graph property dataset
+    - [x] 🟢 bibliographic networks: cora, pubmed, citeseer
+    - [x] 🟢 molecular graphs: proteins, nci1, mutag, ptc
+    - [x] 🟢 social networks: twitter, foursquare
+    - [x] 🟢 recommender system: amazon, last.fm, movielens  
+    - [x] 🟢 knowledge graphs: wordnet, freebase 
   - [x] 🟢 Add pre-trained graph models: done
-    - [x] Toolx
-    - [x] Graph-Bert
-    - [x] SEG-Bert
-    - [x] KMeans Clustering
-    - [x] BPR
-    - [x] TransE
+    - [x] 🟢 Toolx
+    - [x] 🟢 Graph-Bert
+    - [x] 🟢 SEG-Bert
+    - [x] 🟢 KMeans Clustering
+    - [x] 🟢 BPR
+    - [x] 🟢 TransE
   - [x] 🟢 Include graph reasoning tasks: done
-    - [x] graph property reasoning
-    - [x] bibliographic paper topic reasoning
-    - [x] molecular graph function reasoning
-    - [x] social network community reasoning
-    - [x] recommender system reasoning
-    - [x] knowledge graph reasoning
+    - [x] 🟢 graph property reasoning
+    - [x] 🟢 bibliographic paper topic reasoning
+    - [x] 🟢 molecular graph function reasoning
+    - [x] 🟢 social network community reasoning
+    - [x] 🟢 recommender system reasoning
+    - [x] 🟢 knowledge graph reasoning
+  - [x] 🟢 Polish and release the datasets: 4/4 released
+    - [x] 🟢 graph raw data: 
+    - [x] 🟢 graph reasoning prompt data
+    - [x] 🟢 pre-trained graph model checkpoints
+    - [x] 🟢 fine-tuned llm model checkpoints
+    
   - [ ] 🟠 Add and test more LLMs: 1/5 done
-    - [x] GPT-J
+    - [x] 🟢 GPT-J
     - [ ] LLaMA
     - [ ] GPT-2
     - [ ] OPT
     - [ ] Bloom
 - [ ] 🟠 Release the framework and service: 0/5 done
-  - [ ] Polish and release the datasets: 2/4 released
-    - [x] 🟢 graph raw data: 
-    - [ ] 🟠 graph reasoning prompt data
-    - [x] 🟢 pre-trained graph model checkpoints
-    - [ ] 🟠 fine-tuned llm model checkpoints
   - [ ] 🟠 Implement the CLI for framework usage
   - [ ] 🟠 Provide the demo for graph reasoning
   - [ ] 🟠 Add API for customerized graph reasoning
