@@ -3,6 +3,8 @@ from koala.language_models.gptj_8bit.Model_GPTJ_8bit import GPTJForCausalLM
 from collections import UserDict
 from transformers import AutoConfig, AutoTokenizer, AutoModelForCausalLM
 
+import torch
+
 class Hub_Language_Model(UserDict):
     def __init__(self):
         UserDict.__init__(self)
@@ -48,21 +50,6 @@ class Causal_Language_Model:
         if self.model_checkpoint is not None:
             self.model = AutoModelForCausalLM.from_pretrained(self.model_checkpoint, cache_dir=self.cache_dir).to(self.hyper_parameter_dict['device'])
 
-    def inference(self, input_text=''):
-        if input_text is None or input_text == '':
-            payload = self.tokenizer.bos_token
-        else:
-            payload = input_text
-        inputs = self.tokenizer(text=payload, return_tensors="pt")
-        inputs = inputs.to(self.hyper_parameter_dict['device'])
-        sample_outputs = self.model.generate(
-            inputs["input_ids"],
-            num_beams=5, top_k=1, top_p=0.95, temperature=1.9, do_sample=True,
-            pad_token_id=self.tokenizer.eos_token_id,
-            num_return_sequences=5, max_length=self.hyper_parameter_dict['max_length']
-        )
-        output_str = [self.tokenizer.decode(sample_output, skip_special_tokens=True) for i, sample_output in enumerate(sample_outputs)]
-        return output_str
 
 class Causal_Language_Model_8bit_GPTJ(Causal_Language_Model):
 
@@ -72,3 +59,29 @@ class Causal_Language_Model_8bit_GPTJ(Causal_Language_Model):
         self.model_checkpoint = model_checkpoint
         print('loading gptj-8bit model...')
         self.model = GPTJForCausalLM.from_pretrained(self.model_checkpoint, cache_dir=self.cache_dir).to(self.hyper_parameter_dict['device'])
+        self.load_checkpoint()
+
+    def inference(self, input_text=''):
+        if input_text is None or input_text == '':
+            payload = self.tokenizer.bos_token2
+        else:
+            payload = input_text
+        inputs = self.tokenizer(text=payload, return_tensors="pt")
+        inputs = inputs.to(self.hyper_parameter_dict['device'])
+        sample_outputs = self.model.generate(
+            inputs["input_ids"],
+            num_beams=5, top_k=5, top_p=0.95, temperature=1.9,
+            bos_token_id=self.tokenizer.bos_token_id,
+            eos_token_id=self.tokenizer.eos_token_id,
+            pad_token_id=self.tokenizer.eos_token_id,
+            num_return_sequences=1, max_length=self.hyper_parameter_dict['max_length'],
+        )
+        output_str = [self.tokenizer.decode(sample_output, skip_special_tokens=True) for i, sample_output in
+                      enumerate(sample_outputs)]
+        return output_str
+
+    def load_checkpoint(self, checkpoint_dir="koala/language_models/gptj_8bit/local_data/finetuned_model/", checkpoint_name="graph_toolformer_GPTJ_mixed"):
+        if checkpoint_dir is None or checkpoint_name is None:
+            raise ValueError("The checkpoint dir and name cannot be None.")
+        checkpoint = torch.load(checkpoint_dir + checkpoint_name, map_location=self.hyper_parameter_dict['device'])
+        self.model.load_state_dict(checkpoint['model_state_dict'])

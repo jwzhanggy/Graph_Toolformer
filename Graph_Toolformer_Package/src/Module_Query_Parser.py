@@ -42,11 +42,13 @@ class Module_Query_Parser():
                         parameter_list.append(parameter)
                     else:
                         nested_function_call_str += ','+parameter
-
             parameter_list = self.update_parameter_list(parameter_list, set_parameter_placeholder_dict)
             parsed_function_calls.append((function_name, parameter_list))
 
-        return parsed_function_calls
+        if len(parsed_function_calls) == 1:
+            return parsed_function_calls[0]
+        else:
+            return parsed_function_calls
 
     def update_parameter_list(self, parameter_list, set_parameter_placeholder_dict):
         updated_parameter_list = []
@@ -60,7 +62,10 @@ class Module_Query_Parser():
                 updated_parameter_list.append(self.update_parameter_list(parameter, set_parameter_placeholder_dict))
             else:
                 updated_parameter_list.append(parameter)
-        return updated_parameter_list
+        if type(parameter_list) is tuple:
+            return tuple(updated_parameter_list)
+        else:
+            return updated_parameter_list
 
     def parse_output_variable(self, input_string):
         output_variable_pattern = r'\)\s*([-->]*)([a-zA-Z0-9_\s]*)\s*\]'
@@ -80,6 +85,7 @@ class Module_Query_Parser():
 
 if __name__ == "__main__":
     #input = 'Output: Nodes [ GR ( GL ( "dodecahedral_graph", GB("a", GS("c"))), "periphery" )  -->  r ] have the largest eccentricity [GR(GL("dodecahedral_graph"), "eccentricity")] in the dodecahedral graph, which make them part of its periphery.'
-    input = 'Output: Nodes [GR(GL("gpr", {"dodecahedral_graph", "bull_graph"}, { ( "a", "b" ), (alice, bob) }), "periphery")-->r] have the largest eccentricity [GR(GL("gpr", "dodecahedral_graph"), "eccentricity")] in the dodecahedral graph, which make them part of its periphery. Reasoning Result: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] <||> {0: 5, 1: 5, 2: 5, 3: 5, 4: 5, 5: 5, 6: 5, 7: 5, 8: 5, 9: 5, 10: 5, 11: 5, 12: 5, 13: 5, 14: 5, 15: 5, 16: 5, 17: 5, 18: 5, 19: 5}.'
+    #input = 'Output: Nodes [GR(GL("gpr", {"dodecahedral_graph", "bull_graph"}, { ( "a", "b" ), (alice, bob) }), "periphery")-->r] have the largest eccentricity [GR(GL("gpr", "dodecahedral_graph"), "eccentricity")] in the dodecahedral graph, which make them part of its periphery. Reasoning Result: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] <||> {0: 5, 1: 5, 2: 5, 3: 5, 4: 5, 5: 5, 6: 5, 7: 5, 8: 5, 9: 5, 10: 5, 11: 5, 12: 5, 13: 5, 14: 5, 15: 5, 16: 5, 17: 5, 18: 5, 19: 5}.'
+    input = 'Output: Nodes [GR(GL("cora"), "graph-bert:topic", {paper#1})-->r] have the largest eccentricity [GR(GL("gpr", "dodecahedral_graph"), "eccentricity")] in the dodecahedral graph, which make them part of its periphery. Reasoning Result: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] <||> {0: 5, 1: 5, 2: 5, 3: 5, 4: 5, 5: 5, 6: 5, 7: 5, 8: 5, 9: 5, 10: 5, 11: 5, 12: 5, 13: 5, 14: 5, 15: 5, 16: 5, 17: 5, 18: 5, 19: 5}.'
     parser = Module_Query_Parser()
     print(parser.parse_query(query_input=input))
