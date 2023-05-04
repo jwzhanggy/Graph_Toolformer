@@ -4,7 +4,7 @@
 > **Note**
 > <span style="color:red"> May 4, 2023: All the datasets and model checkpoints have been publicized </span><br>
 > - **Datasets and Model Checkpoints**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/data)
-> - **LLMs Fine-Tuning with Prompts**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)
+> - **LLMs Fine-Tuning code with Prompts**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)
 > - **Graph-toolformer Demo code**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package)
 
 ************************************************************************************************
