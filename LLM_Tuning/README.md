@@ -15,12 +15,12 @@ In this directory, we will fine-tune the LLMs with graph reasoning prompt datase
 After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the LLMs fine-tuning with the prompt datasets:
 
 > **Note**
-> To avoid getting OOM, depending on your machine (GPU or CPU memory capacty), please also adjust the batch_size and max_length parameters accordingly.
+> **1.** To avoid getting OOM, depending on your machine (GPU or CPU memory capacty), please also adjust the batch_size and max_length parameters accordingly.
+> **2.** If you plan to use the fine-tuned LLM checkpoint for graph reasoning, please (1) replace the fine-tuned checkpoints in the downloaded **kola directory** of the Graph_Toolformer_Package for graph reasoning demos, (2) also remember to change the checkpoint names (removing the datetime string at the end) before pasting to the koala folder, so the demo framework will load the checkpoint.
 
 ```
 python3 gtoolformer_gptj_script.py
 ```
-
 ************************************************************************************************
 
 ## Organization of the code?
