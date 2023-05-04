@@ -8,22 +8,22 @@ The data used in graph-toolformer include four parts, which are shared via Googl
 - **4. Fine-tuned Language Model Checkpoints**: fine-tuned language models for different graph reasoning tasks
 
 
-### 1. Graph Raw Datasets (104MB, [Download](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing))
+### 1. Graph Raw Datasets (104MB, [Download from Google Drive](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing))
 
 - [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
 
 
-### 2. Graph Reasoning Prompt Dataset ([Download](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt))
+### 2. Graph Reasoning Prompt Dataset ([Download from Github](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt))
 
 - [Graph reasoning prompt descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt/README.md)
 
 
-### 3. Pre-trained Graph Model Checkpoints (5.1GB [Download](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
+### 3. Pre-trained Graph Model Checkpoints (5.1GB [Download from Google Drive](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
 
 - [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
 
 
-### 4. Fine-tuned Language Model Checkpoints (5.1GB [Download](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
+### 4. Fine-tuned Language Model Checkpoints (5.1GB [Download from Google Drive](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
 
 - [Fine-tuned LLM descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
 
