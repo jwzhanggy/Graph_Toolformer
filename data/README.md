@@ -7,53 +7,21 @@ The data used in graph-toolformer include four parts, which are shared via Googl
 - **3. Pre-trained Graph Model Checkpoints**: 5 different pre-trained graph models are used for various graph reasoning tasks
 - **4. Fine-tuned Language Model Checkpoints**: fine-tuned language models for different graph reasoning tasks
 
-🔴
-🟠
-⚫
-⚪
-🟣
-🟢
-🟡
-🔵
 
 ### 1. Graph Raw Datasets ([Download](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing))
 
 - [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
 
-🔴
-🟠
-⚫
-⚪
-🟣
-🟢
-🟡
-🔵
 
 ### 2. Graph Reasoning Prompt Dataset ([Download](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt))
 
 - [Graph reasoning prompt descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt/README.md)
 
-🔴
-🟠
-⚫
-⚪
-🟣
-🟢
-🟡
-🔵
 
 ### 3. Pre-trained Graph Model Checkpoints ([Download](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
 
 - [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
 
-🔴
-🟠
-⚫
-⚪
-🟣
-🟢
-🟡
-🔵
 
 ### 4. Fine-tuned Language Model Checkpoints ([Download](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
 
