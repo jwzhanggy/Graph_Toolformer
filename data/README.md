@@ -12,7 +12,7 @@ The data used in graph-toolformer include four parts:
 
 - [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
 
-### 2. Graph Reasoning Prompt Dataset (to be released)
+### 2. Graph Reasoning Prompt Dataset ([Download](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt))
 
 - [Graph reasoning prompt descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_LLM_Training/prompt)
 
@@ -20,6 +20,6 @@ The data used in graph-toolformer include four parts:
 
 - [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
 
-### 4. Fine-tuned Language Model Checkpoints (to be released)
+### 4. Fine-tuned Language Model Checkpoints ([Download](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
 
 - [Fine-tuned LLM descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
