@@ -105,12 +105,12 @@ The koala folder covers the pre-trained graph models and pre-trained language mo
 
 6 different pre-trained graph models are included in the Graph-Toolformer framework for different graph reasoning tasks, which are listed as follows:
 
-- **Graph Property Reasoning Model: toolx**
-- **Bibliographic Network Reasoning Model: Graph-Bert**
-- **Molecular Graph Reasoning Model: Model, SEG-Bert**
-- **Online Social Network Reasoning Model: KMeans**
-- **Recommender System Reasoning Model: BPR (Bayesian Personalized Ranking)**
-- **Knowledge Graph Reasoning Model: TransE**
+- **Graph Property Reasoning Model**: toolx
+- **Bibliographic Network Reasoning Model**: Graph-Bert
+- **Molecular Graph Reasoning Model**: SEG-Bert
+- **Online Social Network Reasoning Model**: KMeans
+- **Recommender System Reasoning Model**: BPR (Bayesian Personalized Ranking)
+- **Knowledge Graph Reasoning Model**: TransE
 
 #### Toolx for Graph Property Reasoning
 
