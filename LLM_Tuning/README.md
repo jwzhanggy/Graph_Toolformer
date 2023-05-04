@@ -14,6 +14,9 @@ In this directory, we will fine-tune the LLMs with graph reasoning prompt datase
 
 After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the LLMs fine-tuning with the prompt datasets:
 
+> **Note**
+> To avoid getting OOM, depending on your machine (GPU or CPU memory capacty), please also adjust the batch_size and max_length parameters accordingly.
+
 ```
 python3 gtoolformer_gptj_script.py
 ```
