@@ -1,6 +1,6 @@
 # Data used in Graph-Toolformer Framework.
 
-The data used in graph-toolformer include four parts:
+The data used in graph-toolformer include four parts, which have been shared via Google Drive:
 
 - **1. Graph Raw Datasets**: the raw datasets of different graphs studied in this framework
 - **2. Graph Reasoning Prompt Dataset**: the designed prompts for various graph reasoning tasks
