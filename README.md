@@ -1,7 +1,7 @@
 # Graph-Toolformer (project done)
 
-## Latest Updates: 1. All the datasets and model checkpoints have been publicized
-## Latest Updates: 2. Source code of both LLM Tuning and Graph-toolformer Demo are released
+## - Latest Updates: 1. All the datasets and model checkpoints have been publicized
+## - Latest Updates: 2. Source code of both LLM Tuning and Graph-toolformer Demo are released
 > **Note**
 > - **Datasets and Model Checkpoints**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/data)
 > - **LLMs Fine-Tuning code with Prompts**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)
