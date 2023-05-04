@@ -64,7 +64,7 @@ For the packages cannot be installed with the above conda command, you may consi
   - [x] 🟢 add graph model hub
   - [x] 🟢 add graph reasoning task hub
   - [x] 🟢 add llm model hub
-- [ ] 🟢 Expand the framework: 3/4 done
+- [x] 🟢 Expand the framework: 3/3 done
   - [x] 🟢 Include graph datasets: done
     - [x] 🟢 graph property dataset
     - [x] 🟢 bibliographic networks: cora, pubmed, citeseer
