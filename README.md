@@ -1,7 +1,7 @@
 # Graph-Toolformer (project done)
 
-**Note**
-May 4, 2023: All the datasets and model checkpoints have been publicized
+> **Note**
+> May 4, 2023: All the datasets and model checkpoints have been publicized
 
 
 
