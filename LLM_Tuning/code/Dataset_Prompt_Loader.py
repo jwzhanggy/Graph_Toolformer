@@ -40,8 +40,8 @@ class Dataset_Prompt_Loader(dataset):
     def __init__(self, dName=None, dDescription=None):
         super().__init__(dName, dDescription)
 
-    def load_prompts(self):
-        f = open(self.dataset_source_folder_path+self.dataset_source_file_name, 'r')
+    def load_prompts(self, file_path):
+        f = open(file_path, 'r')
         input_data = []
         output_data = []
         full_data = []
@@ -69,14 +69,14 @@ class Dataset_Prompt_Loader(dataset):
 
     def load(self):
         print('prepare text graph_datasets...')
-        input_data, output_data, full_data, result_data = self.load_prompts()
-        train_input, test_input, train_output, test_output, train_full, test_full, train_result, test_result = \
-            train_test_split(input_data, output_data, full_data, result_data, train_size=min(len(full_data)-200, 1600),
-                             test_size=160, shuffle=True, random_state=self.random_seed)
+        train_input, train_output, train_full, train_result = self.load_prompts(
+            self.dataset_source_folder_path+self.dataset_source_file_name+'_train')
+        test_input, test_output, test_full, test_result = self.load_prompts(
+            self.dataset_source_folder_path + self.dataset_source_file_name + '_test')
 
         train_dataset = Prompt_Dataset(train_input, train_output, train_full, train_result)
         test_dataset = Prompt_Dataset(test_input, test_output, test_full, test_result)
         train_dataloader = DataLoader(train_dataset, batch_size=self.batch_size, shuffle=True)
-        test_dataloader = DataLoader(test_dataset, batch_size=self.batch_size, shuffle=True)
+        test_dataloader = DataLoader(test_dataset, batch_size=self.batch_size, shuffle=False)
 
         return {'train': train_dataloader, 'test': test_dataloader}

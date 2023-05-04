@@ -21,7 +21,7 @@ from bitsandbytes.optim import Adam8bit
 class Method_Graph_Toolformer_GPTJ(method):
     data = None
     max_epoch = None
-    learning_rate = 1e-6
+    learning_rate = 1e-5
     weight_decay = 1e-2
     max_length = 128
     fine_tuned_checkpoint_filename = None
@@ -58,31 +58,31 @@ class Method_Graph_Toolformer_GPTJ(method):
 
     def train_model(self, train_dataloader=None):
         self.model.gradient_checkpointing_enable()
-        eval_obj = Evaluate_Metrics('', '')
         t_begin = time.time()
-        with torch.cuda.amp.autocast():
-            for epoch in range(self.max_epoch):
-                count = 0
-                for batch in train_dataloader:
-                    str_inputs = [batch['full'][i] for i in range(len(batch['full']))]
-                    str_labels = [batch['full'][i] for i in range(len(batch['full']))]
-                    inputs = self.tokenizer(str_inputs, padding='max_length', max_length=self.max_length, truncation=True)
-                    labels = self.tokenizer(str_labels, padding='max_length', max_length=self.max_length, truncation=True)
-                    inputs = torch.LongTensor(inputs["input_ids"]).to(self.device)
-                    labels = torch.LongTensor(labels["input_ids"]).to(self.device)
+        for epoch in range(self.max_epoch):
+            count = 0
+            for batch in train_dataloader:
+                str_inputs = [batch['full'][i] for i in range(len(batch['full']))]
+                str_labels = [batch['full'][i] for i in range(len(batch['full']))]
+                inputs = self.tokenizer(str_inputs, padding='max_length', max_length=self.max_length, truncation=True)
+                labels = self.tokenizer(str_labels, padding='max_length', max_length=self.max_length, truncation=True)
+                inputs = torch.LongTensor(inputs["input_ids"]).to(self.device)
+                labels = torch.LongTensor(labels["input_ids"]).to(self.device)
 
+                with torch.cuda.amp.autocast():
                     outputs = self.model.forward(inputs)
                     loss = F.cross_entropy(outputs.logits[:, :-1, :].flatten(0, -2), labels[:, 1:].flatten(), reduction='mean')
 
-                    if count % 10 == 0:
-                        print('epoch: {}/{}'.format(epoch, self.max_epoch), 'batch: {}/{}'.format(count, len(train_dataloader)), 'loss: {}'.format(loss),  'time elapsed: {:.4f}s'.format(time.time()-t_begin))
-                    count += 1
+                if count % 10 == 0:
+                    print('epoch: {}/{}'.format(epoch, self.max_epoch), 'batch: {}/{}'.format(count, len(train_dataloader)), 'loss: {}'.format(loss),  'time elapsed: {:.4f}s'.format(time.time()-t_begin))
+                count += 1
 
-                    loss.backward()
-                    self.optimizer.step()
-                    self.optimizer.zero_grad()
-                if 0:
-                    self.test(self.data['test'], fast_check=True)
+                loss.backward()
+                self.optimizer.step()
+                self.optimizer.zero_grad()
+            if epoch > 4:
+                self.test(self.data['test'], fast_check=True)
+        self.model.gradient_checkpointing_disable()
 
 
     def test(self, test_dataloader=None, fast_check=False):
@@ -91,20 +91,20 @@ class Method_Graph_Toolformer_GPTJ(method):
         pred_result = []
         reason_result = []
         count = 0
-        with torch.cuda.amp.autocast():
-            for batch in test_dataloader:
-                for index in range(len(batch['inputs'])):
-                    payload = batch['inputs'][index] + ' Output: '
-                    reasoning_output = batch['local_data'][index]
-                    generated_outputs = self.inference(input_text=payload)
-                    true_result.append(batch['full'][index])
-                    pred_result.append(generated_outputs[0])
-                    reason_result.append(reasoning_output)
-                if count % 1 == 0:
-                    print('batch: {}/{}'.format(count, len(test_dataloader)), 'time elapsed: {:.4f}s'.format(time.time() - t_begin))
-                count += 1
-                if fast_check:
-                    break
+
+        for batch in test_dataloader:
+            for index in range(len(batch['inputs'])):
+                payload = batch['inputs'][index] + ' Output: '
+                reasoning_output = batch['local_data'][index]
+                generated_outputs = self.inference(input_text=payload)
+                true_result.append(batch['full'][index])
+                pred_result.append(generated_outputs[0])
+                reason_result.append(reasoning_output)
+            if count % 1 == 0:
+                print('batch: {}/{}'.format(count, len(test_dataloader)), 'time elapsed: {:.4f}s'.format(time.time() - t_begin))
+            count += 1
+            if fast_check:
+                break
 
         result = {'pred': pred_result, 'true': true_result, 'local_data': reason_result}
         if fast_check:
@@ -116,43 +116,44 @@ class Method_Graph_Toolformer_GPTJ(method):
 
     def inference(self, input_text=''):
         if input_text is None or input_text == '':
-            payload = self.tokenizer.bos_token
+            payload = self.tokenizer.bos_token2
         else:
             payload = input_text
         inputs = self.tokenizer(text=payload, return_tensors="pt")
         inputs = inputs.to(self.device)
         sample_outputs = self.model.generate(
             inputs["input_ids"],
-            num_beams=5, top_k=1, top_p=0.95, temperature=1.9, do_sample=True,
-            #bos_token_id=self.tokenizer.bos_token_id,
-            #eos_token_id=self.tokenizer.eos_token_id,
-            #pad_token_id=self.tokenizer.pad_token_id,
+            num_beams=5, top_k=5, top_p=0.95, temperature=1.9,
+            bos_token_id=self.tokenizer.bos_token_id,
+            eos_token_id=self.tokenizer.eos_token_id,
             pad_token_id=self.tokenizer.eos_token_id,
             num_return_sequences=1, max_length=self.max_length,
-            #max_new_tokens=self.max_length
+            #max_new_tokens=self.max_length, do_sample=False,
         )
         output_str = [self.tokenizer.decode(sample_output, skip_special_tokens=True) for i, sample_output in enumerate(sample_outputs)]
         return output_str
     
     def run(self):
         print('method running@{}...'.format(self.device))
+        train_tag = True
         result = None
 
-        #print('-- start inference')
-        #for str in self.inference(input_text="The eccentricity of nodes in the dodecahedral graph can be represented as"):
-        #    print(str)
+        if train_tag:
 
-        print('--start training...')
-        self.train_model(train_dataloader=self.data['train'])
+            print('--start training...')
+            self.train_model(train_dataloader=self.data['train'])
 
-        print('--saving checkpoint...')
-        self.save_checkpoint()
+            print('--saving checkpoint...')
+            self.save_checkpoint()
 
-        print('--start testing...')
-        result = self.test(test_dataloader=self.data['test'])
+            print('--start testing...')
+            result = self.test(test_dataloader=self.data['test'], fast_check=False)
+        else:
+            print('--loading checkpoint...')
+            self.load_checkpoint()
 
-        #print('--loading checkpoint...')
-        #self.load_checkpoint()
+            print('--start testing...')
+            result = self.test(test_dataloader=self.data['test'], fast_check=False)
 
         return result
 
