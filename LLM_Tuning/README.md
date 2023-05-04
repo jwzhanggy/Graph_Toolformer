@@ -4,6 +4,16 @@
 
 ************************************************************************************************
 
+## How to run the code?
+
+After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command
+
+```
+python3 gtoolformer_gptj_script.py
+```
+
+************************************************************************************************
+
 ## Organization of the code?
 
 By adding the needed dataset, the model can run by calling "python gtoolformer_gptj_script.py".
