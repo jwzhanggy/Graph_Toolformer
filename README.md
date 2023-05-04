@@ -77,17 +77,18 @@ For the packages cannot be installed with the above conda command, you may consi
     - [x] 🟢 recommender system reasoning
     - [x] 🟢 knowledge graph reasoning
 - [x] 🟢 Polish and release the datasets: 4/4 released
-    - [x] 🟢 graph raw data: 
-    - [x] 🟢 graph reasoning prompt data
-    - [x] 🟢 pre-trained graph model checkpoints
-    - [x] 🟢 fine-tuned llm model checkpoints
+  - [x] 🟢 graph raw data: 
+  - [x] 🟢 graph reasoning prompt data
+  - [x] 🟢 pre-trained graph model checkpoints
+  - [x] 🟢 fine-tuned llm model checkpoints
     
-  - [ ] 🟠 Add and test more LLMs: 1/5 done
-    - [x] 🟢 GPT-J
-    - [ ] LLaMA
-    - [ ] GPT-2
-    - [ ] OPT
-    - [ ] Bloom
+- [ ] 🟠 Add and test more LLMs: 1/5 done
+  - [x] 🟢 GPT-J
+  - [ ] LLaMA
+  - [ ] GPT-2
+  - [ ] OPT
+  - [ ] Bloom
+ 
 - [ ] 🟠 Release the framework and service: 0/5 done
   - [ ] 🟠 Implement the CLI for framework usage
   - [ ] 🟠 Provide the demo for graph reasoning
