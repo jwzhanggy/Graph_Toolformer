@@ -2,7 +2,7 @@
 
 ## 1. Contents
 
-This directory contains the graph reasoning prompts for 15 different graph datasets. They all have their corresponding raw graph datasets (see [**this page**](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)).
+This directory contains the graph reasoning prompts for 15 different graph datasets. They all have their corresponding raw graph datasets (which can be downloaded from [**this page**](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)).
 
 Each directory contains the train/test graph reasoning tuples for different graph datasets.
 
