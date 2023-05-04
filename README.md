@@ -1,5 +1,10 @@
 # Graph-Toolformer (project done)
 
+**Note**
+May 4, 2023: All the datasets and model checkpoints have been publicized
+
+
+
 ![framework](./figures/framework.png)
 
 ### Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT
