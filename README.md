@@ -1,6 +1,6 @@
 # Graph-Toolformer
 
-## 🟢 May 4 Updates:
+## 🟢 May 4: Updates
 ### - 🟢 Update 1: All the datasets and model checkpoints have been publicized, some large-sized data are shared via google drive
 > **Note**
 > - 🔵 **Datasets and Model Checkpoints (about 5GB)**: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/data)
