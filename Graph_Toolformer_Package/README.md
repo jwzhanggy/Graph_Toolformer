@@ -40,7 +40,7 @@ About 15 different graph datasets are used and studied in graph-toolformer in th
 - **Molecular Graph Datasets**: Proteins, Mutag, NCI1, PTC
 - **Online Social Network Datasets**: Twitter, Foursquare
 - **Recommender System Datasets**: Amazon, Last-FM, Movielens
-- **Knowledge Graph Datasets**: WorldNet, Freebase
+- **Knowledge Graph Datasets**: WordNet, Freebase
 
 ### Dataset Formats.
 
@@ -54,7 +54,7 @@ f.close()
 print(dataset.keys())
 ```
 
-#### For the datasets with 1 single large-scale graph/network (including, Cora, Pubmed, Citeseer; Twitter, Foursquare; Amazon, Last-FM, Movielens; WorldNet, Freebase), the loaded "dataset" is organized with a python dictionary with the following format:
+#### For the datasets with 1 single large-scale graph/network (including, Cora, Pubmed, Citeseer; Twitter, Foursquare; Amazon, Last-FM, Movielens; WordNet, Freebase), the loaded "dataset" is organized with a python dictionary with the following format:
 
 ```
 dataset = {
