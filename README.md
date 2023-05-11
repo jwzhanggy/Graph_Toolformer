@@ -52,20 +52,20 @@ For the packages cannot be installed with the above conda command, you may consi
 ### Source code
 
 This project source code is divided into two directories:
-- **LLM_Tuning [link](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)**: Language model fine-tuning code with graph reasoning prompt dataset
-- **Graph_Toolformer_Package [link](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package)**: The Graph-Toolformer reasoning demo code, which will load the fine-tuned LLMs (by the LLM_Tuning code) and the other pre-trained GNN models.
+- **[LLM_Tuning](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)**: Language model fine-tuning code with graph reasoning prompt dataset
+- **[Graph_Toolformer_Package](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package)**: The Graph-Toolformer reasoning demo code, which will load the fine-tuned LLMs (by the LLM_Tuning code) and the other pre-trained GNN models.
 
 ### Dataset
 
 The datasets used in this paper inclode both the the generated graph reasoning prompt datasets, and the benchmark datasets of the graphs
-- **Prompt Datasets [link](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt)**: The graph reasoning prompts created in this paper for LLM fine-tuning. The prompt dataset has been included in the LLM_Tuning directory already.
-- **Graph Raw Datasets [link](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/graph_datasets)**: The 15 graph benchmark datasets used in this paper. The graph raw dataset (about 100MB) should be download from the google drive.
+- **[Prompt Datasets](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt)**: The graph reasoning prompts created in this paper for LLM fine-tuning. The prompt dataset has been included in the LLM_Tuning directory already.
+- **[Graph Raw Datasets](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/graph_datasets)**: The 15 graph benchmark datasets used in this paper. The graph raw dataset (about 100MB) should be download from the google drive.
 
 ### Model checkpoints
 
 The pre-trained/fine-tuned model checkpoints released by this project also have two parts
-- **Fine-tuned LLM Checkpoint [link](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/koala/language_models)**: The checkpoint of fine-tuned language model by the above LLM_Tuning code, readers can either tune the LLMs by yourselves or use the provided checkpoint by us. If you plan to use the checkpoint released by us, you may need to download it from the Google drive, and the zip file is about 5GB.
-- **Pre-trained GNN Checkpoints [link](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/koala/graph_models)**: We use 5 different graph models in this project, the checkpoints of the pre-trained GNNs are also provided. The readers can either pre-train their own graph models, or use the pre-trained graph model checkpoints released by us, which can be downloaded from Google drive. The zip file is about 100MB, and the upziped folder can be about 5GB.
+- **[Fine-tuned LLM Checkpoint](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/koala/language_models)**: The checkpoint of fine-tuned language model by the above LLM_Tuning code, readers can either tune the LLMs by yourselves or use the provided checkpoint by us. If you plan to use the checkpoint released by us, you may need to download it from the Google drive, and the zip file is about 5GB.
+- **[Pre-trained GNN Checkpoints](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/koala/graph_models)**: We use 5 different graph models in this project, the checkpoints of the pre-trained GNNs are also provided. The readers can either pre-train their own graph models, or use the pre-trained graph model checkpoints released by us, which can be downloaded from Google drive. The zip file is about 100MB, and the upziped folder can be about 5GB.
 
 ************************************************************************************************
 
