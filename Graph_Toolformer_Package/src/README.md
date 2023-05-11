@@ -1,3 +1,5 @@
+![reasoning_pipeline!](reasoning_pipeline.png)
+
 The source code of the graph-toolformer framework. The framework consists of several components listed as follows:
 
   - [x] add working memory module
