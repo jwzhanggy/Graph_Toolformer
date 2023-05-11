@@ -45,7 +45,7 @@ class Method_Graph_Toolformer_GPTJ(method):
 
     def load_checkpoint(self, checkpoint_dir="./finetuned_checkpoints/graph_toolformer"):
         date_str = datetime.today().strftime('%Y-%m-%d')
-        checkpoint = torch.load(checkpoint_dir+"_"+self.fine_tuned_checkpoint_filename+"_"+date_str, map_location=self.device)
+        checkpoint = torch.load(checkpoint_dir+"_GPTJ", map_location=self.device)
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 
@@ -54,7 +54,7 @@ class Method_Graph_Toolformer_GPTJ(method):
         torch.save({
             'model_state_dict': self.model.state_dict(),
             'optimizer_state_dict': self.optimizer.state_dict()
-        }, checkpoint_dir+"_"+self.fine_tuned_checkpoint_filename+"_"+date_str)
+        }, checkpoint_dir+"_GPTJ")
 
     def train_model(self, train_dataloader=None):
         self.model.gradient_checkpointing_enable()
@@ -158,3 +158,6 @@ class Method_Graph_Toolformer_GPTJ(method):
         return result
 
 
+if __name__ == "__main__":
+    model = Method_Graph_Toolformer_GPTJ(checkpoint_name="EleutherAI/gpt-j-6b", cache_dir = "../pretrained_model/gpt-j-6b-8bit", device='cuda:1')
+    print(model.inference(input_text="Thursday’s verdict only added to the intrigue surrounding the gravest legal and political unknown from the 2021 Capitol insurrection that hangs over the 2024 campaign: will Donald Trump, the president who inspired the uprising, face his own legal and political price?"))

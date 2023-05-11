@@ -33,7 +33,7 @@ class Evaluate_Metrics(base_evaluate):
                 print("Exceptopm: {}".format(e))
         return output_result
 
-    def evaluate(self):
+    def evaluate(self, gl=False):
         #print('evaluating performance...')
         eval_result = {}
         try:
@@ -50,7 +50,11 @@ class Evaluate_Metrics(base_evaluate):
             eval_result['bleu'] = None
 
         try:
-            eval_result['api_accuracy'] = self.evaluate_api(predictions=self.data['pred'], references=self.data['true'])
+            if gl:
+                eval_result['api_accuracy'] = self.evaluate_gl_api(predictions=self.data['pred'],
+                                                                references=self.data['true'])
+            else:
+                eval_result['api_accuracy'] = self.evaluate_api(predictions=self.data['pred'], references=self.data['true'])
         except Exception as e:
             print(e)
             eval_result['api_accuracy'] = None
@@ -67,6 +71,21 @@ class Evaluate_Metrics(base_evaluate):
             string = m.group(0)
             if string in pred: count +=1
             total += 1
+        print(count, total)
+        return count/total
+
+    def evaluate_gl_api(self, predictions, references):
+        pattern = r'\[gl\((.*?)\)\]'
+        count = 0
+        total = 0
+        for pred, true in zip(predictions, references):
+            pred = pred.replace(' ', '').lower()
+            true = true.replace(' ', '').lower()
+            m = re.search(pattern, true)
+            string = m.group(0)
+            if string in pred: count +=1
+            total += 1
+        print(count, total)
         return count/total
 
 
