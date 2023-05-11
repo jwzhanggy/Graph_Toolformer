@@ -4,7 +4,7 @@ The source code of the graph-toolformer framework. The framework consists of sev
 
   - [x] add working memory module
   - [x] add query parser module
-  - [x] add query excutor module: to be provided
+  - [x] add query excutor module
   - [x] add graph dataset hub
   - [x] add graph model hub
   - [x] add graph reasoning task hub
