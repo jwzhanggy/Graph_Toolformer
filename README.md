@@ -2,7 +2,7 @@
 
 ### 🟢 May 10: Updates
 - **Update 1**: The paper has been updated, and the new version of the paper can be found [via this link](http://www.ifmlab.org/files/paper/graph_toolformer.pdf). The paper at arxiv will also be updated shortly.
-- **Update 2**: The prompt dataset has been updated to correct some typos. The LLM fine-tuned checkpoint has been updated to reflect the changes to the prompts. The source code of the graph_toolformer_package has been updated for continuous reasoning with the demo.
+- **Update 2**: The prompt dataset has been updated to correct some typos. The LLM fine-tuned checkpoint has been updated to reflect the changes to the prompts. The source code of the graph_toolformer_package has been updated for multiple continuous reasoning with the demo.
 - **Update 3**: We add more descriptions about code organization and usage instructions:
     - [Organization of the project source code, data and model checkpoints](https://github.com/jwzhanggy/Graph_Toolformer/tree/main#organization-of-the-project-source-code-data-and-model-checkpoints)
     - [How to play with the code?](https://github.com/jwzhanggy/Graph_Toolformer/tree/main#how-to-play-with-the-code)
