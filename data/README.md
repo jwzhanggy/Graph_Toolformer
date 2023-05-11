@@ -18,7 +18,7 @@ The data used in graph-toolformer include four parts, which are shared via Googl
 - [Graph reasoning prompt descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt/README.md)
 
 
-### 3. Pre-trained Graph Model Checkpoints (5.1GB [Download from Google Drive](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
+### 3. Pre-trained Graph Model Checkpoints (91.6MB [Download from Google Drive](https://drive.google.com/file/d/1Wpw2DBa2p_PG_od3AVGZd5GvoKhCM2mH/view?usp=sharing))
 
 - [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
 
