@@ -83,7 +83,19 @@ For the packages cannot be installed with the above conda command, you may consi
 
 ### Play with LLM_Tuning code
 
-After you download the LLM_Tuning directory, 
+After downloading the LLM_Tuning directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the LLMs fine-tuning with the prompt datasets:
+
+> **Note**
+> 
+> **1.** To avoid getting OOM, depending on your machine (GPU memory capacty), please also adjust the batch_size and max_length parameters accordingly.
+> **2.** For 8bit models, it seems some CPU will not support the mixed precision computation. We recommend you use GPU instead of CPU for running the code.
+> **3.** If you plan to use the fine-tuned LLM checkpoint for graph reasoning, please (1) replace the fine-tuned checkpoints in the downloaded **Graph_Toolformer_Package/koala/language_models/gptj_8bit/local_data/finetuned_model/graph_toolformer_GPTJ** directory of the Graph_Toolformer_Package for graph reasoning demos, (2) also remember to change the checkpoint names to **graph_toolformer_GPTJ** before pasting it to the koala folder, so the demo framework will load the checkpoint.
+
+```
+python3 gtoolformer_gptj_script.py
+```
+
+For more information, you can also refer to the [README.md provided in the LLM_Tuning directory](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning) as well.
 
 ### Play with Graph_Toolformer Demo code
 
