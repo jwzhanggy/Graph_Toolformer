@@ -5,7 +5,7 @@
 
 ## How to run the demo code?
 
-After downloading this directory, also downloading the [graph_datasets.zip](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing), [koala/graph_models.zip](https://drive.google.com/file/d/1Wpw2DBa2p_PG_od3AVGZd5GvoKhCM2mH/view?usp=share_link) and koala/language_models.zip (see the README.md file in these folders), installing the [conda environment](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml), you can just go ahead to run the code with the following command to start the demo
+After downloading this directory, also downloading the [graph_datasets.zip](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing), [koala/graph_models.zip](https://drive.google.com/file/d/1Wpw2DBa2p_PG_od3AVGZd5GvoKhCM2mH/view?usp=share_link) and [koala/language_models.zip](https://drive.google.com/file/d/1wja3_aBbWg6YztB7gNna_2FuN10dWjiZ/view?usp=sharing), installing the [conda environment](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml), you can just go ahead to run the code with the following command to start the demo
 
 ```
 python3 ./src/Framework_Graph_Toolformer.py
