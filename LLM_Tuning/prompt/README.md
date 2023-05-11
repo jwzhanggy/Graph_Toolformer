@@ -9,6 +9,8 @@
 🟡
 🔵
 
+#### 🟢 May 10: Updates: correct some typos in the prompts
+
 ## 1. Contents
 
 This directory contains the graph reasoning prompts for 15 different graph datasets. They all have their corresponding raw graph datasets (which can be downloaded from [**this page**](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)).
