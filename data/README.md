@@ -23,7 +23,7 @@ The data used in graph-toolformer include four parts, which are shared via Googl
 - [Pre-trained graph model descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models)
 
 
-### 4. Fine-tuned Language Model Checkpoints (5.1GB [Download from Google Drive](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing))
+### 4. Fine-tuned Language Model Checkpoints (5.1GB [Download from Google Drive](https://drive.google.com/file/d/1wja3_aBbWg6YztB7gNna_2FuN10dWjiZ/view?usp=sharing))
 
 - [Fine-tuned LLM descriptions](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-used-in-graph-toolformer)
 
