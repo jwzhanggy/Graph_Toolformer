@@ -26,7 +26,7 @@ task_data_dict = {
     # 'molecular_graphs': {'mutag': 10, 'nci1': 10, 'proteins': 10, 'ptc': 10},
     # 'recommender_systems': {'movielens': 10, 'last-fm': 10, 'amazon': 10},
     # 'social_networks': {'foursquare': 10, 'twitter': 6},
-    # 'knowledge_graphs': {'freebase': 10, 'worldnet': 10},
+    # 'knowledge_graphs': {'wordnet': 10, 'freebase': 10},
     'mixed': {None: 3}
 }
 
