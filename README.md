@@ -101,6 +101,17 @@ For more information, you can also refer to the [README.md provided in the LLM_T
 
 ### Play with Graph_Toolformer Demo code
 
+After downloading the Graph_Toolformer_Package directory, also downloading the [graph_datasets.zip](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing), [koala/graph_models.zip](https://drive.google.com/file/d/1Wpw2DBa2p_PG_od3AVGZd5GvoKhCM2mH/view?usp=share_link) and [koala/language_models.zip](https://drive.google.com/file/d/1wja3_aBbWg6YztB7gNna_2FuN10dWjiZ/view?usp=sharing), installing the [conda environment](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml), you can just go ahead to run the code with the following command to start the demo
+
+```
+python3 ./src/Framework_Graph_Toolformer.py
+```
+You can type in inputs which are similar to the prompt inputs, and the model will carry out the reasoning task and return the otuputs. The reasoning process will call both the LLMs and GNN models, so generating the output will take some time. The GNN models are pre-trained according to the previous papers, and the LLMs is fine-tuned with the code in the LLM_Tunign directory based on the prompt datasets.
+
+By changing the "if 0" to "if 1" in the bottom main function of Framework_Graph_Toolformer.py, you can try different reasoning tasks.
+
+For more information, you can also refer to the [README.md provided in the Graph_Toolformer_Package directory](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package) as well.
+
 ************************************************************************************************
 
 🔴
