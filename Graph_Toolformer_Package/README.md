@@ -5,7 +5,7 @@
 
 ## How to run the demo code?
 
-After downloading this directory, installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the demo
+After downloading this directory, also downloading the graph_datasets.zip, koala/graph_models.zip and koala/language_models.zip (see the README.md file in these folders), installing the conda environment ([**see this file**](https://github.com/jwzhanggy/Graph_Toolformer/blob/main/environment.yml)), you can just go ahead to run the code with the following command to start the demo
 
 ```
 python3 ./src/Framework_Graph_Toolformer.py
