@@ -47,11 +47,11 @@ Paper description in Chinese: [文章中文介绍](./中文介绍)
 
 This project source code is divided into two directories:
 - **[LLM_Tuning](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)**: Language model fine-tuning code with graph reasoning prompt dataset
-- **[Graph_Toolformer_Package](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package)**: The Graph-Toolformer reasoning demo code, which will load the fine-tuned LLMs (by the LLM_Tuning code) and the other pre-trained GNN models.
+- **[Graph_Toolformer_Package](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package)**: The Graph-Toolformer reasoning demo code, which will load the fine-tuned LLMs (tuned by the LLM_Tuning code) and the other pre-trained GNN models.
 
 ### Dataset
 
-The datasets used in this paper inclode both the the generated graph reasoning prompt datasets, and the benchmark datasets of the graphs
+The datasets used in this paper inclode both the the generated graph reasoning prompt datasets, and the raw graph benchmark datasets
 - **[Prompt Datasets](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt)**: The graph reasoning prompts created in this paper for LLM fine-tuning. The prompt dataset has been included in the LLM_Tuning directory already.
 - **[Graph Raw Datasets](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package/graph_datasets)**: The 15 graph benchmark datasets used in this paper. The graph raw dataset (about 100MB) should be download from the google drive.
 
