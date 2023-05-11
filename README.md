@@ -26,14 +26,6 @@ Paper URL at arxiv: https://arxiv.org/pdf/2304.11116.pdf
 
 Paper description in Chinese: [文章中文介绍](./中文介绍)
 
-### Project Conda Environment
-
-See the shared [environment.yml](./environment.yml) file. Create a local environment at your computer with command 
-```
-conda env create -f environment.yml
-```
-For the packages cannot be installed with the above conda command, you may consider to install via pip instead.
-
 ### References 
 (also add \usepackage{hyperref} into your paper for adding the url address in the reference)
 
