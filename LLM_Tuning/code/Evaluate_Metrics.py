@@ -71,7 +71,6 @@ class Evaluate_Metrics(base_evaluate):
             string = m.group(0)
             if string in pred: count +=1
             total += 1
-        print(count, total)
         return count/total
 
     def evaluate_gl_api(self, predictions, references):
@@ -85,7 +84,6 @@ class Evaluate_Metrics(base_evaluate):
             string = m.group(0)
             if string in pred: count +=1
             total += 1
-        print(count, total)
         return count/total
 
 
