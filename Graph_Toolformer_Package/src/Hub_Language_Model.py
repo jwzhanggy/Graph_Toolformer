@@ -80,7 +80,7 @@ class Causal_Language_Model_8bit_GPTJ(Causal_Language_Model):
                       enumerate(sample_outputs)]
         return output_str
 
-    def load_checkpoint(self, checkpoint_dir="koala/language_models/gptj_8bit/local_data/finetuned_model/", checkpoint_name="graph_toolformer_GPTJ_mixed"):
+    def load_checkpoint(self, checkpoint_dir="koala/language_models/gptj_8bit/local_data/finetuned_model/", checkpoint_name="graph_toolformer_GPTJ"):
         if checkpoint_dir is None or checkpoint_name is None:
             raise ValueError("The checkpoint dir and name cannot be None.")
         checkpoint = torch.load(checkpoint_dir + checkpoint_name, map_location=self.hyper_parameter_dict['device'])

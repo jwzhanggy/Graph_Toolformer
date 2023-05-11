@@ -124,7 +124,7 @@ class Graph_Ranking(Graph_Reasoning_Task):
         if graph_model is None:
             graph_model = self.default_graph_model
             warnings.warn("No graph model is specified, the task will use the default graph model {}".format(graph_model.model_name))
-
+        print(api_function, extra_parameter)
         if api_function == 'recommendation':
             return graph_model.recommendation(graph_data, extra_parameter)
         elif api_function == 'topk_recommendation':

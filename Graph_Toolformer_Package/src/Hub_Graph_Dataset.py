@@ -74,10 +74,10 @@ class Hub_Graph_Dataset(UserDict):
             name='freebase', description='freebase knowledge graph dataset',
             dataset_source_folder_path='./graph_datasets/',
             dataset_source_file_name='freebase')
-        self['worldnet'] = Graph_Dataset_Loader(
-            name='worldnet', description='worldnet knowledge graph dataset',
+        self['wordnet'] = Graph_Dataset_Loader(
+            name='wordnet', description='wordnet knowledge graph dataset',
             dataset_source_folder_path='./graph_datasets/',
-            dataset_source_file_name='worldnet')
+            dataset_source_file_name='wordnet')
 
     def get_dataset_name(self, name_str):
         pass

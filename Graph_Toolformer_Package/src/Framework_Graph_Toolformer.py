@@ -172,23 +172,43 @@ class Framework_Graph_Toolformer:
             red_color = "\033[96m"
             reset_color = "\033[0m"
             print(f"{red_color}{text}{reset_color}")
-
+        def print_in_green(text):
+            red_color = "\033[97m"
+            reset_color = "\033[0m"
+            print(f"{red_color}{text}{reset_color}")
         while True:
             try:
+                print('=' * 100)
+                print_in_green('Copy and paste any of the inputs from the prompt dataset here, e.g.,\n'
+                      'What is the minimal shortest path length between any two nodes in the tutte graph?\n'
+                      'What is the topic of paper #83826 in the cora bibliographic network?\n'
+                      'The pubmed bibliographic network\'s paper #16167 is concerned with the area of [TBR].\n'
+                      'Within the citeseer bibliographic network, paper #671 focuses on the subject of [TBR].\n')
                 input_str = input("Input (press Enter to stop): ")
                 if input_str == '': break
                 generation_output = self.inference(input_str=input_str)
                 _, generation_output = generation_output[0].split(' Output: ')
+                generation_output = generation_output.strip()
+                print('LLM Generation Output: {}'.format(generation_output))
                 query_dict = panel.query_extraction(generation_output)
+                print('Query Extraction and Parsing Output: {}'.format(query_dict))
                 result_dict = panel.query_execution(query_dict)
+                print('Query Execution Output: {}'.format(result_dict))
                 output_statement = panel.statement_updating(generation_output, result_dict)
                 print_in_color(output_statement)
+
             except Exception as e:
                 print(e)
 
 if __name__ == "__main__":
     print('='*70)
 
+    # copy and past any of the inputs from the prompt dataset, e.g.,
+    # What is the minimal shortest path length between any two nodes in the tutte graph?
+    # What is the topic of paper #83826 in the cora bibliographic network?
+    # The pubmed bibliographic network' paper #16167 is concerned with the area of [TBR].
+    # Within the citeseer bibliographic network, paper #671 focuses on the subject of [TBR].
+    #
     if 1:
         panel = Framework_Graph_Toolformer()
         panel.prepare_setting()
@@ -232,7 +252,7 @@ if __name__ == "__main__":
 
     if 0:
         # social network community testing
-        generation_output = 'Output: In foursquare, the id of user 0mkarr\'s community is [GR(GL("foursquare"), "kmeans:community", {user#0mkarr, user#1000museums})-->r]. Reasoning Result: Unsupervised.'
+        generation_output = 'In the online social network twitter, user #deeprogress and user #alejandro1254 belong to [GR(GL("twitter"), "kmeans:common_community_check", user#deeprogress, user#alejandro1254)-->r] community.'
         print(generation_output)
         panel = Framework_Graph_Toolformer()
         panel.prepare_setting()
@@ -244,18 +264,19 @@ if __name__ == "__main__":
     if 0:
         # recommender system testing
 
-        generation_output = 'Output: The likelihood that user #A3QJU4FEN8PQSZ will be interested in item #B001FDG0IW in Amazon is [GR(GL("amazon"), "bpr:recommendation", user#A3QJU4FEN8PQSZ, item#B001FDG0IW)-->r].'
+        generation_output = 'In Movielens, the top 10 movies that user #u272 likes include [GR(GL("movielens"), "bpr:topk_recommendation", user#u272, 10)-->r].'
         print(generation_output)
         panel = Framework_Graph_Toolformer()
         panel.prepare_setting()
         query_dict = panel.query_extraction(generation_output)
+        print(query_dict)
         result_dict = panel.query_execution(query_dict)
         output_statement = panel.statement_updating(generation_output, result_dict)
         print(output_statement)
 
     if 0:
         # knowledge graph reasoning
-        generation_output = 'Output: According to the Freebase knowledge graph, the relation between entity#/m/027rn and entity#/m/06cx9 is [GR(GL("freebase"), "transe:head_entity", relation#/location/country/form_of_government, entity#/m/06cx9)-->r]. Reasoning Result: /location/country/form_of_government.'
+        generation_output = 'According to the WordNet knowledge graph, via relation #_hypernym, we can obtain entity #imagination.n.02 from entity [GR(GL("wordnet"), "transe:head_entity", relation#_hypernym, entity#imagination.n.02)-->r].'
         print(generation_output)
         panel = Framework_Graph_Toolformer()
         panel.prepare_setting()
