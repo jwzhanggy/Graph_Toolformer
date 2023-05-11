@@ -17,7 +17,9 @@ After downloading the LLM_Tuning directory, installing the conda environment ([*
 > **Note**
 > 
 > **1.** To avoid getting OOM, depending on your machine (GPU memory capacty), please also adjust the batch_size and max_length parameters accordingly.
+> 
 > **2.** For 8bit models, it seems some CPU will not support the mixed precision computation. We recommend you use GPU instead of CPU for running the code.
+> 
 > **3.** If you plan to use the fine-tuned LLM checkpoint for graph reasoning, please (1) replace the fine-tuned checkpoints in the downloaded **Graph_Toolformer_Package/koala/language_models/gptj_8bit/local_data/finetuned_model/graph_toolformer_GPTJ** directory of the Graph_Toolformer_Package for graph reasoning demos, (2) also remember to change the checkpoint names to **graph_toolformer_GPTJ** before pasting it to the koala folder, so the demo framework will load the checkpoint.
 
 ```
