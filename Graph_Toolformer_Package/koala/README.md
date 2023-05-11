@@ -1,3 +1,13 @@
-Please download the latest koala zip file (about 5GB) from "[koala.zip](https://drive.google.com/file/d/15dMT96MHES56hV1MNlCrf2RWKPnyecao/view?usp=sharing)" to replace the current koala folder.
+## Please download the following two zip files shared from Google drive, upzip them, and copy to this folder.
 
-More detailed information about the downloaded koala folder can be found [at this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#pre-trained-graph-models-and-fine-tuned-llms-used-in-graph-toolformer).
+### The organization of this koala folder should be like
+
+```
+./Graph_Toolformer_Package/koala
+./Graph_Toolformer_Package/koala/language_models/...
+./Graph_Toolformer_Package/koala/graph_models/
+```
+### Google Drive Links for Downloading the model checkpoints
+
+- language_models.zip (5.4GB, [Download from Google Drive]())
+- graph_models.zip (96MB, [Download from Google Drive](https://drive.google.com/file/d/1Wpw2DBa2p_PG_od3AVGZd5GvoKhCM2mH/view?usp=share_link))
