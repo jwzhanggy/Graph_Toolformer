@@ -1,6 +1,20 @@
 
 # Graph-Toolformer Package for Graph Reasoning Demos
 
+![reasoning_pipeline!](reasoning_pipeline.png)
+
+************************************************************************************************
+
+## What this directory is used for?
+
+Based on the LLMs fine-tuned by the LLM_Tuning directory code, and other pre-trained GNN models, this directory implement the Graph-Toolformer Framework for carrying out the graph reasoning.
+
+As shown by the above plot pipeline, given the input reasoning query, this directory will 
+- generate the graph reasoning output statement by the fine-tuned LLMs
+- extract and parse the query from the output statement
+- execute the query by calling the GNN models on the graph datasets
+- post-process the output statements with the reasoning results
+
 ************************************************************************************************
 
 ## How to run the demo code?
