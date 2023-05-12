@@ -1,4 +1,4 @@
-# Graph-Toolformer ([Must Read 1](https://github.com/jwzhanggy/Graph_Toolformer/tree/main#organization-of-the-project-source-code-data-and-model-checkpoints), and [Must Read 2](https://github.com/jwzhanggy/Graph_Toolformer/tree/main#how-to-play-with-the-code))
+# Graph-Toolformer
 
 ### 🟢 May 10: Updates
 - **Update 1**: The paper has been updated, and [the new version of the paper](http://www.ifmlab.org/files/paper/graph_toolformer.pdf) adds the Q&A prompt, the framework reasoning module design, and also add more experimental results and analysis. [The paper at arxiv](https://arxiv.org/pdf/2304.11116.pdf) has also been updated as well.
