@@ -30,13 +30,12 @@ Paper description in Chinese: [文章中文介绍](./中文介绍)
 (also add \usepackage{hyperref} into your paper for adding the url address in the reference)
 
 ```
-@article{zhang2023graph,
-    title={Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT},
-    author={Zhang, Jiawei},
-    year={2023},
-    eprint={2304.11116},
-    archivePrefix={arXiv},
-    primaryClass={cs.AI},
+@article{Zhang2023GraphToolFormerTE,
+  title={Graph-ToolFormer: To Empower LLMs with Graph Reasoning Ability via Prompt Augmented by ChatGPT},
+  author={Jiawei Zhang},
+  journal={ArXiv},
+  year={2023},
+  volume={abs/2304.11116}
 }
 ```
 
