@@ -4,7 +4,7 @@
 > 
 > - <span style="color:blue"> 8-bit tensor cores are not supported on the CPU. bitsandbytes can be run on 8-bit tensor core-supported hardware, which are Turing and Ampere GPUs (RTX 20s, RTX 30s, RTX 40s, A40-A100, T4+). </span>
 > 
-> - For other GPUs, pleaser refer to [this Q&A](https://github.com/TimDettmers/bitsandbytes/issues/134#issuecomment-1436540166).
+> - For other GPUs with slow 8bit matmul supported, pleaser refer to [this Q&A](https://github.com/TimDettmers/bitsandbytes/issues/134).
 
 ### 🟢 May 10: Updates
 - **Update 1**: The paper has been updated, and [the new version of the paper](http://www.ifmlab.org/files/paper/graph_toolformer.pdf) adds the Q&A prompt, the framework reasoning module design, and also add more experimental results and analysis. [The paper at arxiv](https://arxiv.org/pdf/2304.11116.pdf) has also been updated as well.
