@@ -5,8 +5,10 @@
 ```
 ./Graph_Toolformer_Package/koala
 ./Graph_Toolformer_Package/koala/language_models/...
-./Graph_Toolformer_Package/koala/graph_models/
+./Graph_Toolformer_Package/koala/graph_models/...
 ```
+Please download the zip files from the following links, upzip them to replace the "**language_models**" and "**graph_models**" folders.
+
 ### Google Drive Links for Downloading the model checkpoints
 
 - language_models.zip (5.4GB, [Download from Google Drive](https://drive.google.com/file/d/1wja3_aBbWg6YztB7gNna_2FuN10dWjiZ/view?usp=sharing))
