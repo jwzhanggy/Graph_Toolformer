@@ -10,7 +10,7 @@ The data used in graph-toolformer include four parts, which are shared via Googl
 
 ### 1. Graph Raw Datasets (104MB, [Download from Google Drive](https://drive.google.com/file/d/1lC23j9RYMb44JRJybxIpUtxuQ2lW58n_/view?usp=sharing))
 
-- [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#graph-datasets-used-in-graph-toolformer)
+- [Graph raw dataset description](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package#dataset-formats)
 
 
 ### 2. Graph Reasoning Prompt Dataset ([Download from Github](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning/prompt))
