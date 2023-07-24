@@ -4,20 +4,6 @@
 > 
 > - <span style="color:blue"> 8-bit tensor cores are not supported on the CPU. bitsandbytes can be run on 8-bit tensor core-supported hardware, which are Turing and Ampere GPUs (RTX 20s, RTX 30s, RTX 40s, A40-A100, T4+). </span>
 
-### 🟢 May 10: Updates
-- **Update 1**: The paper has been updated, and [the new version of the paper](https://arxiv.org/pdf/2304.11116.pdf) adds the Q&A prompt, the framework reasoning module design, and also add more experimental results and analysis. 
-- **Update 2**: The prompt dataset has been updated to correct some typos. The LLM fine-tuned checkpoint has been updated to reflect the changes to the prompts. The source code of the graph_toolformer_package has been updated for multiple continuous reasoning with the demo.
-- **Update 3**: We add more descriptions about code organization and usage instructions:
-    - [Organization of the project source code, data and model checkpoints](https://github.com/jwzhanggy/Graph_Toolformer/tree/main#organization-of-the-project-source-code-data-and-model-checkpoints)
-    - [How to play with the code?](https://github.com/jwzhanggy/Graph_Toolformer/tree/main#how-to-play-with-the-code)
-
-### 🟢 May 4: Updates
-- **Update 1**: All the datasets and model checkpoints have been publicized, some large-sized data are shared via google drive
-    - Datasets and Model Checkpoints (about 5GB): [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/data)
-- **Update 2**: Source code of both Graph-toolformer LLM Tuning and Graph Reasoning Demo are released
-    - LLMs Fine-Tuning code with Prompts: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/LLM_Tuning)
-    - Graph-toolformer Demo code: [See this page](https://github.com/jwzhanggy/Graph_Toolformer/tree/main/Graph_Toolformer_Package)
-
 ************************************************************************************************
 
 ![framework](./figures/framework.png)
