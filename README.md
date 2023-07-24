@@ -17,7 +17,6 @@ Paper URL at arxiv: https://arxiv.org/pdf/2304.11116.pdf
 Paper description in Chinese: [文章中文介绍](./中文介绍)
 
 ### References 
-(also add \usepackage{hyperref} into your paper for adding the url address in the reference)
 
 ```
 @article{Zhang2023GraphToolFormerTE,
